@@ -1,32 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="icon" href="resources/logo.svg" type="image/png" />
     <title>Русский репортаж</title>
-</head>
-<body>
-    <header class="header">
-        <a class="header_logo" href="/"><img src="resources/logo_text.svg" alt="Logo"></img></a>
-        <div class="header_box_link"> 
-            <a class="header_link" href=""> Главная</a>
-            <a class="header_link" href=""> Каталог</a>
-            <a class="header_link" href=""> Кинопрокат</a>
-            <a class="header_link" href=""> Новости</a>
-            <a class="header_link" href=""> О&nbsp;компании</a>
-            <a class="header_link" href=""> контакты</a>
+  </head>
+  <body>
+    <section class="slaider_section">
+      <div class="slaider">
+        <div class="slaider_box_header">
+          <div class="slaider_header" id="header-placeholder"></div>
         </div>
-        <div class="header_box_btn">
-            <a class="header_btn">
-                <img class="img_20px" src="resources/search.svg" alt="search">
-            </a>
-            <a class="header_btn">
-                <p class="header_link">ENG</p>
-            </a>
+        <div class="gallery_slide gallery_slide_active">
+          <div class="slaider_box box_slide_1">
+            <div class="slaider_conteiner">
+              <div class="slaider_box_text">
+                <div>
+                  <p class="slide_title">На пороге смерти</p>
+                  <p class="slide_data">В кино с 15 июня</p>
+                </div>
+                <p class="slide_text">
+                  Версия ночи «живых мертвецов» и конца света от испанских
+                  мастеров сверхъестественного ужаса.
+                </p>
+                <a class="slide_btn_info" href="">О ФИЛЬМЕ</a>
+              </div>
+              <div class="slide_vidio slide_vidio_slide_1">
+                <a class="slide_vidio_btn" href=""
+                  ><img
+                    class="img_32px"
+                    src="resources/mdi_play.svg"
+                    alt="turn_on_the_trailer"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-</body>
+        <div class="gallery_slide">
+          <div class="slaider_box box_slide_2">
+            <div class="slaider_conteiner">
+              <div class="slaider_box_text">
+                <div>
+                  <p class="slide_title">Дурная кровь</p>
+                  <p class="slide_data">В кино с 20 июля</p>
+                </div>
+                <p class="slide_text">
+                  Культовый фильм Леоса Каракса, открывший миру звезду Жюльет
+                  Бинош. Пронзительное, дерзкое и нежное признание режиссера в
+                  любви к кино и женщине его мечты.
+                </p>
+                <a class="slide_btn_info" href="">О ФИЛЬМЕ</a>
+              </div>
+              <div class="slide_vidio slide_vidio_slide_2">
+                <a class="slide_vidio_btn" href=""
+                  ><img
+                    class="img_32px"
+                    src="resources/mdi_play.svg"
+                    alt="turn_on_the_trailer"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_slide">
+          <div class="slaider_box box_slide_1">
+            <div class="slaider_conteiner">
+              <div class="slaider_box_text">
+                <div>
+                  <p class="slide_title">На пороге смерти</p>
+                  <p class="slide_data">В кино с 15 июня</p>
+                </div>
+                <p class="slide_text">
+                  Версия ночи «живых мертвецов» и конца света от испанских
+                  мастеров сверхъестественного ужаса.
+                </p>
+                <a class="slide_btn_info" href="">О ФИЛЬМЕ</a>
+              </div>
+              <div class="slide_vidio slide_vidio_slide_1">
+                <a class="slide_vidio_btn" href=""
+                  ><img
+                    class="img_32px"
+                    src="resources/mdi_play.svg"
+                    alt="turn_on_the_trailer"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_slide">
+          <div class="slaider_box box_slide_2">
+            <div class="slaider_conteiner">
+              <div class="slaider_box_text">
+                <div>
+                  <p class="slide_title">Дурная кровь</p>
+                  <p class="slide_data">В кино с 20 июля</p>
+                </div>
+                <p class="slide_text">
+                  Культовый фильм Леоса Каракса, открывший миру звезду Жюльет
+                  Бинош. Пронзительное, дерзкое и нежное признание режиссера в
+                  любви к кино и женщине его мечты.
+                </p>
+                <a class="slide_btn_info" href="">О ФИЛЬМЕ</a>
+              </div>
+              <div class="slide_vidio slide_vidio_slide_2">
+                <a class="slide_vidio_btn" href=""
+                  ><img
+                    class="img_32px"
+                    src="resources/mdi_play.svg"
+                    alt="turn_on_the_trailer"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_slide">
+          <div class="slaider_box box_slide_1">
+            <div class="slaider_conteiner">
+              <div class="slaider_box_text">
+                <div>
+                  <p class="slide_title">На пороге смерти</p>
+                  <p class="slide_data">В кино с 15 июня</p>
+                </div>
+                <p class="slide_text">
+                  Версия ночи «живых мертвецов» и конца света от испанских
+                  мастеров сверхъестественного ужаса.
+                </p>
+                <a class="slide_btn_info" href="">О ФИЛЬМЕ</a>
+              </div>
+              <div class="slide_vidio slide_vidio_slide_1">
+                <a class="slide_vidio_btn" href=""
+                  ><img
+                    class="img_32px"
+                    src="resources/mdi_play.svg"
+                    alt="turn_on_the_trailer"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_slide">
+          <div class="slaider_box box_slide_2">
+            <div class="slaider_conteiner">
+              <div class="slaider_box_text">
+                <div>
+                  <p class="slide_title">Дурная кровь</p>
+                  <p class="slide_data">В кино с 20 июля</p>
+                </div>
+                <p class="slide_text">
+                  Культовый фильм Леоса Каракса, открывший миру звезду Жюльет
+                  Бинош. Пронзительное, дерзкое и нежное признание режиссера в
+                  любви к кино и женщине его мечты.
+                </p>
+                <a class="slide_btn_info" href="">О ФИЛЬМЕ</a>
+              </div>
+              <div class="slide_vidio slide_vidio_slide_2">
+                <a class="slide_vidio_btn" href=""
+                  ><img
+                    class="img_32px"
+                    src="resources/mdi_play.svg"
+                    alt="turn_on_the_trailer"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slaider_controls_wrapper">
+          <div>
+            <div class="slaider_controls">
+              <div class="script_number">
+                <button class="slaider_control_prev"></button>
+                <span id="currentSlideCounter"></span>
+                <progress
+                  class="timerProgress"
+                  id="timerProgress"
+                  max="100"
+                ></progress>
+                <span id="totalSlidesCounter"></span>
+                <button class="slaider_control_next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section_rolling_plans">
+      <div class="box_rolling_plans_header">
+          <p class="rolling_plans_header">Прокатные <span style="color: var(--red-base, #D8251D);">планы</span></p>
+          <button class="rolling_plans_btn"><p class="rolling_plans_btn_text">Весь каталог</p> <img src="resources/Arrow_right_red.svg"></button>
+      </div>
+      <div class="box_rolling_plans">
+        <div class="rolling_plans_movies rolling_plans">
+            <img class="rolling_plans_movies_img" src="resources/ded.png" alt="on the verge of death">
+            <p class="rolling_plans_movies_data">В кино с 15 июня </p>
+            <p class="rolling_plans_movies_name">На пороге смерти</p>
+        </div>
+        <div class="rolling_plans_movies rolling_plans">
+            <img class="rolling_plans_movies_img" src="resources/pantafa.png" alt="Pantapha - Eater of Souls">
+            <p class="rolling_plans_movies_data">В кино с 6 июля</p>
+            <p class="rolling_plans_movies_name">Пантафа — пожирательница душ</p>
+        </div>
+        <div class="rolling_plans_movies rolling_plans">
+            <img class="rolling_plans_movies_img" src="resources/bad_blood.png" alt="Bad blood">
+            <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+            <p class="rolling_plans_movies_name">Дурная кровь</p>
+        </div>
+        <div class="rolling_plans_movies rolling_plans">
+            <img class="rolling_plans_movies_img" src="resources/boy.png" alt="Boy meets girl">
+            <p class="rolling_plans_movies_data">В кино с 20 июля </p>
+            <p class="rolling_plans_movies_name">Парень встречает девушку</p>
+        </div>
+        <div class="rolling_plans_movies ">
+            <img class="rolling_plans_movies_img" src="resources/burn.jpg" alt="BURN ALL MY LETTERS">
+            <p class="rolling_plans_movies_data">В кино с 15 июня  </p>
+            <p class="rolling_plans_movies_name">СОЖГИ ВСЕ МОИ ПИСЬМА</p>
+        </div>
+        <div class="rolling_plans_movies">
+            <img class="rolling_plans_movies_img" src="resources/kells.jpg" alt="MYSTERY KELLS">
+            <p class="rolling_plans_movies_data">В кино с 6 июля </p>
+            <p class="rolling_plans_movies_name">ТАЙНА КЕЛЛС</p>
+        </div>
+        <div class="rolling_plans_movies">
+            <img class="rolling_plans_movies_img" src="resources/story.jpg" alt="STORIES THAT SHOULD NOT BE TOLD">
+            <p class="rolling_plans_movies_data">В кино с 20 июля </p>
+            <p class="rolling_plans_movies_name">ИСТОРИИ, КОТОРЫЕ НЕЛЬЗЯ РАССКАЗЫВАТЬ</p>
+        </div>
+        <div class="rolling_plans_movies">
+            <img class="rolling_plans_movies_img" src="resources/fairy.jpg" alt="MY FAIRY PICK">
+            <p class="rolling_plans_movies_data">В кино с 20 июля </p>
+            <p class="rolling_plans_movies_name">МОЯ ФЕЯ-ПРОКАЗНИЦА</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((headerHtml) => {
+          document.getElementById("header-placeholder").innerHTML = headerHtml;
+        });
+    </script>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((footerHtml) => {
+          document.getElementById("footer-placeholder").innerHTML = footerHtml;
+        });
+    </script>
+    <script src="js/slaider.js"></script>
+  </body>
 </html>

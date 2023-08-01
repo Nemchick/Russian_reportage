@@ -1,15 +1,34 @@
 @import "header.css";
+@import "footer.css";
+@import "slider.css";
+@import "rolling_plans.css";
 
 @font-face {
   font-family: "OpenSans";
   src: url("../resources/OpenSans-VariableFont_wdth\,wght.ttf");
 }
-body {
-  background-color: black;
-}
+
 .img_20px {
   width: 20px;
   height: 20px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.img_24px {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img_32px {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.collor_grey {
+  background-color: #eceaea;
+}
+.z_index{
+    z-index: 1;
 }

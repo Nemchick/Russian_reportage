@@ -1,0 +1,79 @@
+.section_rolling_plans {
+  padding: 128px 72px 109px 72px;
+}
+.rolling_plans_header {
+  color: var(--black, #000);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.rolling_plans_btn {
+  width: 160px;
+  height: 42px;
+  border-radius: 100px;
+  border: 2px solid var(--red-base, #d8251d);
+  background-color: #ffff;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rolling_plans_btn_text {
+  color: var(--red-base, #d8251d);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+.box_rolling_plans{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 32px;
+}
+.box_rolling_plans_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.rolling_plans_movies{
+    width: 306px;
+    max-height: 529px;
+    display: none;
+}
+.rolling_plans_movies_data {
+  color: var(--grey-50, #767575);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rolling_plans_movies_name {
+  color: var(--black, #000);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.rolling_plans_movies_img {
+  width: 306px;
+  height: 437px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 17px;
+}
+.rolling_plans{
+    display: block;
+}

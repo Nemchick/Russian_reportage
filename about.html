@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="icon" href="resources/logo.svg" type="image/png" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('header.html')
+          .then(response => response.text())
+          .then(headerHtml => {
+            document.getElementById('header-placeholder').innerHTML = headerHtml;
+          });
+      </script>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(footerHtml => {
+          document.getElementById('footer-placeholder').innerHTML = footerHtml;
+        });
+    </script>
+</body>
+</html>
