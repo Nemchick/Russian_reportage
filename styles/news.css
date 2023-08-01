@@ -1,0 +1,138 @@
+.section_news {
+  position: relative;
+  overflow: hidden;
+  height: 1117px; /* Задайте высоту в соответствии с вашими потребностями */
+  padding: 80px 72px 100px 72px;
+}
+
+.section_news .news_animation_square {
+  position: absolute;
+  top: -8%; /* Начальное положение за пределами экрана */
+  left: -60%;
+  transform: rotate(27deg);
+  transition: transform 2s, top 2s;
+  transition-delay: 2s; /* Установите начальную задержку в 2 секунды */
+}
+
+.section_news.show .news_animation_square {
+  transform: translateX(75%) rotate(0deg); /* Трансформация при появлении на экране */
+  top: 0;
+  transition-delay: 0s; /* Уберите задержку перед началом анимации */
+}
+
+.news_title {
+  position: absolute;
+  z-index: 1;
+  color: var(--white, #fff);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  right: -300%; /* Начальное положение слева */
+  transition: right 2s; /* Добавьте анимацию для левого смещения */
+}
+
+.news_btn {
+  position: absolute;
+  z-index: 1;
+  right: -100%; /* Начальное положение справа */
+  width: 160px;
+  height: 42px;
+  border-radius: 100px;
+  border: 2px solid var(--red-base, #d8251d);
+  background-color: #ffff;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: right 2s; /* Добавьте анимацию для правого смещения */
+}
+
+.section_news.show .news_title {
+    right: 81%; /* Расположение слева после анимации */
+}
+
+.section_news.show .news_btn {
+    right: 5%;
+  /* Расположение справа после анимации */
+}
+.left_news {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/bought_the_animation_rights.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 635px;
+  height: 416px;
+  position: absolute;
+  z-index: 1;
+  right: -300%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+  top: 166px; /* Начальное положение слева */
+  transition: right 2s; /* Добавьте анимацию для левого смещения */
+}
+.right_news{
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.58) 30.18%,
+        #000 100%
+      ),
+      url("../resources/oscar_nominations_father.jpg"),
+      lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 635px;
+    height: 416px;
+    position: absolute;
+    z-index: 1;
+    right: -300%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    top: 166px; /* Начальное положение слева */
+    transition: right 2s; /* Добавьте анимацию для левого смещения */ 
+}
+.news_articles_data {
+  color: var(--grey-20, #f0eeee);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section_news.show .left_news {
+    right: 50.6%; /* Расположение слева после анимации */
+}
+.section_news.show .right_news {
+    right: 5%;
+    /* Расположение справа после анимации */
+  }
+.news_articles_text {
+  color: var(--white, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px; /* 155% */
+  text-transform: uppercase;
+}
+@media (min-width: 1670px) {
+    .section_news.show .left_news {
+        right: 50.6%; /* Расположение слева после анимации */
+    }
+}

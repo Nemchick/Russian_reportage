@@ -2,6 +2,7 @@
 @import "footer.css";
 @import "slider.css";
 @import "rolling_plans.css";
+@import "news.css";
 
 @font-face {
   font-family: "OpenSans";
@@ -30,5 +31,5 @@
   background-color: #eceaea;
 }
 .z_index{
-    z-index: 1;
+    z-index: 100;
 }
