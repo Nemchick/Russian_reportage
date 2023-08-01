@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+.header_logo{
+    margin-left: 5%;
+}
+.header_link {
+  color: var(--black, #000);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header_box_link {
+  border-radius: 33px;
+  background: var(--grey-base, #eceaea);
+  display: flex;
+  gap: 32px;
+  height: 42px;
+  padding: 11px 30px 12px 30px;
+  margin-left: 3.40%;
+  margin-right: 13.61%;
+}
+.header_box_btn{
+    display: flex;
+    gap: 15px;
+    margin-right: 5%;
+}
+.header_btn {
+  border-radius: 100px;
+  background: var(--grey-base, #eceaea);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

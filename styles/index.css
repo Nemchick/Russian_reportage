@@ -1,0 +1,15 @@
+@import "header.css";
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../resources/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+body {
+  background-color: black;
+}
+.img_20px {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
