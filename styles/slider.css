@@ -40,12 +40,12 @@
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  padding: 0px 72px 50px 72px;
+  padding-bottom: 40px;
   align-items: flex-end;
 }
 .slide_title {
   max-width: 655px;
-  height: 87px;
+  
   color: var(--white, #fff);
   font-size: 64px;
   font-style: normal;
@@ -54,12 +54,13 @@
   text-transform: uppercase;
 }
 .slaider_box_text {
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .slide_data {
-  height: 22px;
+  
   color: var(--white, #fff);
   opacity: 0.5;
   font-size: 16px;
@@ -76,22 +77,8 @@
   line-height: normal;
 }
 .slide_btn_info {
-  text-decoration: none;
-  width: 120px;
-  height: 42px;
-  border-radius: 100px;
-  background: var(--red-base, #d8251d);
-  color: var(--white, #fff);
-  text-align: center;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.24px;
-  text-transform: uppercase;
-  padding: 12px 25px 12px 25px;
   margin-top: 44px;
-  margin-bottom: 46px;
+  margin-bottom: 96px;
 }
 .slide_vidio {
   width: 411px;
@@ -138,7 +125,8 @@
 .slaider_controls_wrapper {
   position: absolute;
   bottom: 50px;
-  left: 72px;
+  right: 72%;
+  left: 5%;
 }
 .script_number{
     display: flex;
@@ -175,7 +163,7 @@
 }
 
 .timerProgress {
-    width: 194px;
+  width: 100%;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 0;
@@ -191,4 +179,31 @@
   }
 .gallery_slide_active {
   display: block;
+}
+@media (max-width: 1400px) {
+  .slaider_controls_wrapper{
+    left: 10%;
+    right: 65%;
+  }
+}
+@media (max-width: 991px) {
+  .slide_vidio{
+    display: none;
+  }
+  .slaider_controls_wrapper{
+    left: 15%;
+    right: 15%;
+  }
+  
+}
+@media (max-width: 768px) {
+  
+  
+}
+@media (max-width: 576px) {
+  .slaider_controls_wrapper{
+    left: 10px;
+    right: 10px;
+  }
+  
 }

@@ -1,30 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="icon" href="resources/logo.svg" type="image/png" />
+    <link
+      href="bootstrap-5.3.1-dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <div id="header-placeholder"></div>
+  </head>
+  <body>
+    <!-- <div id="header-placeholder"></div> -->
+    <section class="slaider_section">
+      <div class="slaider ">
+        <div class="slaider_box_header">
+          <div class="slaider_header" id="header-placeholder"></div>
+        </div>
+        <div class="gallery_slide  gallery_slide_active">
+          <div class="slaider_box  box_slide_1">
+             <div class="container "> <!-- slaider_conteiner -->
+              <div class="row slaider_conteiner">
+                <div class="slaider_box_text col-12  col-lg ">
+                  <div>
+                    <p class="slide_title">На пороге смерти</p>
+                    <p class="slide_data">В кино с 15 июня</p>
+                  </div>
+                  <p class="slide_text">
+                    Версия ночи «живых мертвецов» и конца света от испанских
+                    мастеров сверхъестественного ужаса.
+                  </p>
+                  <div class="slide_btn_info">
+                    <a class="btn_red" href="">О ФИЛЬМЕ</a>
+                  </div>
+                </div>
+                <div class=" col-4 slide_vidio slide_vidio_slide_1">
+                  <a class="slide_vidio_btn" href=""
+                    ><img
+                      class="img_32px"
+                      src="resources/mdi_play.svg"
+                      alt="turn_on_the_trailer"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slaider_controls_wrapper">
+          <div>
+            <div class="slaider_controls">
+              <div class="script_number">
+                <button class="slaider_control_prev"></button>
+                <span id="currentSlideCounter"></span>
+                <progress
+                  class="timerProgress"
+                  id="timerProgress"
+                  max="100"
+                ></progress>
+                <span id="totalSlidesCounter"></span>
+                <button class="slaider_control_next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div id="footer-placeholder"></div>
+    <!-- <div id="footer-placeholder"></div> -->
     <script>
-        fetch('header.html')
-          .then(response => response.text())
-          .then(headerHtml => {
-            document.getElementById('header-placeholder').innerHTML = headerHtml;
-          });
-      </script>
-    <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(footerHtml => {
-          document.getElementById('footer-placeholder').innerHTML = footerHtml;
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((headerHtml) => {
+          document.getElementById("header-placeholder").innerHTML = headerHtml;
         });
     </script>
-</body>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((footerHtml) => {
+          document.getElementById("footer-placeholder").innerHTML = footerHtml;
+        });
+    </script>
+    <script src="js/slaider.js"></script>
+    
+  </body>
 </html>

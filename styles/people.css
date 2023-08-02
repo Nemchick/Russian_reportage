@@ -1,0 +1,64 @@
+.section_people {
+  width: 1440px;
+  height: 948px;
+  padding: 125px 72px 13px 72px;
+  margin: 0 auto;
+  position: relative;
+}
+.people_img {
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.people_basic {
+  position: absolute;
+  width: 635px;
+  height: 508px;
+  bottom: 143px;
+  left: 402px;
+  z-index: 1;
+}
+.people_bottom {
+  z-index: 2;
+  position: absolute;
+  bottom: 13px;
+  right: 510px;
+}
+.people_left {
+  z-index: 2;
+  position: absolute;
+  bottom: 240px;
+  left: 182px;
+}
+.people_right {
+  z-index: 0;
+  position: absolute;
+  bottom: 540px;
+  right: 292px;
+}
+.people_img_small {
+  width: 305px;
+  height: 229px;
+}
+.people_text {
+  color: var(--black, #000);
+  width: 305px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.people_btn {
+  z-index: 1;
+  position: absolute;
+  bottom: 145px;
+  right: 210px;
+}
+.people_text_position {
+  z-index: 1;
+  position: absolute;
+  bottom: 219px;
+  right: 72px;
+}
+

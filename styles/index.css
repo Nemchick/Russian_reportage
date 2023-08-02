@@ -3,6 +3,7 @@
 @import "slider.css";
 @import "rolling_plans.css";
 @import "news.css";
+@import "people.css";
 
 @font-face {
   font-family: "OpenSans";
@@ -32,4 +33,20 @@
 }
 .z_index{
     z-index: 100;
+}
+.btn_red{
+  text-decoration: none;
+    height: 42px;
+    border-radius: 100px;
+    background: var(--red-base, #d8251d);
+    color: var(--white, #fff);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    padding: 12px 25px 12px 25px;
+    
 }
