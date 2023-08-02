@@ -13,12 +13,16 @@
     <title>Document</title>
   </head>
   <body>
+    
     <!-- <div id="header-placeholder"></div> -->
     <section class="slaider_section">
       <div class="slaider ">
         <div class="slaider_box_header">
+          
           <div class="slaider_header" id="header-placeholder"></div>
+          
         </div>
+        
         <div class="gallery_slide  gallery_slide_active">
           <div class="slaider_box  box_slide_1">
              <div class="container "> <!-- slaider_conteiner -->
@@ -67,23 +71,12 @@
         </div>
       </div>
     </section>
-
-    <!-- <div id="footer-placeholder"></div> -->
-    <script>
-      fetch("header.html")
-        .then((response) => response.text())
-        .then((headerHtml) => {
-          document.getElementById("header-placeholder").innerHTML = headerHtml;
-        });
-    </script>
-    <script>
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((footerHtml) => {
-          document.getElementById("footer-placeholder").innerHTML = footerHtml;
-        });
-    </script>
+    
+    
+    <div id="footer-placeholder"></div>
     <script src="js/slaider.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
     
   </body>
 </html>

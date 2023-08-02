@@ -46,7 +46,7 @@ function updateTimerProgress() {
   }
 }
 function resetTimerProgress() {
-  clearInterval(timerProgressInterval); 
+  clearInterval(timerProgressInterval);
   timerProgressElement.value = 0;
 
   timerProgressInterval = setInterval(() => {
@@ -56,7 +56,6 @@ function resetTimerProgress() {
     }
   }, 50);
 }
-
 
 function setActiveSlideById(id) {
   const currentId = activeId;
