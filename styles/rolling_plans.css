@@ -1,4 +1,6 @@
 .section_rolling_plans {
+  margin: 0 auto;
+  width: 1440px;
   padding: 128px 72px 109px 72px;
 }
 .rolling_plans_header {

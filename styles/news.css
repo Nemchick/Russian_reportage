@@ -1,6 +1,8 @@
 .section_news {
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  width: 1440px;
   height: 1117px; /* Задайте высоту в соответствии с вашими потребностями */
   padding: 80px 72px 100px 72px;
 }
@@ -51,13 +53,30 @@
   transition: right 2s; /* Добавьте анимацию для правого смещения */
 }
 
-.section_news.show .news_title {
-    right: 81%; /* Расположение слева после анимации */
+.big_news {
+  width: 635px;
+  height: 416px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 16px;
+  transition: right 2s;
 }
 
-.section_news.show .news_btn {
-    right: 5%;
-  /* Расположение справа после анимации */
+.small_news {
+  width: 416px;
+  height: 416px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 16px;
+  transition: left 2s;
 }
 .left_news {
   background: linear-gradient(
@@ -71,43 +90,71 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  width: 635px;
-  height: 416px;
-  position: absolute;
-  z-index: 1;
+
   right: -300%;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 16px;
   top: 166px; /* Начальное положение слева */
-  transition: right 2s; /* Добавьте анимацию для левого смещения */
 }
-.right_news{
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.58) 30.18%,
-        #000 100%
-      ),
-      url("../resources/oscar_nominations_father.jpg"),
-      lightgray 50% / cover no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width: 635px;
-    height: 416px;
-    position: absolute;
-    z-index: 1;
-    right: -300%;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 16px;
-    top: 166px; /* Начальное положение слева */
-    transition: right 2s; /* Добавьте анимацию для левого смещения */ 
+.right_news {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/oscar_nominations_father.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  right: -300%;
+  top: 166px; /* Начальное положение слева */
+  /* Добавьте анимацию для левого смещения */
+}
+.small_left_news {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/12_films.png"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  left: -300%;
+  top: 600px; /* Начальное положение слева */
+}
+.small_central_news {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/new_series_news.jpg"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  left: -300%;
+  top: 600px;
+}
+.small_right_news {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/news_animation_miyazaki.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  left: -300%;
+  top: 600px;
 }
 .news_articles_data {
   color: var(--grey-20, #f0eeee);
@@ -117,12 +164,27 @@
   line-height: normal;
 }
 .section_news.show .left_news {
-    right: 50.6%; /* Расположение слева после анимации */
+  right: 50.6%; /* Расположение слева после анимации */
+}
+.section_news.show .small_left_news {
+  left: 5.4%; /* Расположение слева после анимации */
+}
+.section_news.show .small_central_news {
+  left: 35.7%; /* Расположение слева после анимации */
+}
+.section_news.show .small_right_news {
+  left: 66.15%; /* Расположение слева после анимации */
 }
 .section_news.show .right_news {
-    right: 5%;
-    /* Расположение справа после анимации */
-  }
+  right: 5%;/* Расположение справа после анимации */
+}
+.section_news.show .news_title {
+  right: 81%; /* Расположение слева после анимации */
+}
+
+.section_news.show .news_btn {
+  right: 5%;/* Расположение справа после анимации */
+}
 .news_articles_text {
   color: var(--white, #fff);
   font-size: 20px;
@@ -131,8 +193,4 @@
   line-height: 31px; /* 155% */
   text-transform: uppercase;
 }
-@media (min-width: 1670px) {
-    .section_news.show .left_news {
-        right: 50.6%; /* Расположение слева после анимации */
-    }
-}
+
