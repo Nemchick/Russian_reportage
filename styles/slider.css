@@ -125,8 +125,9 @@
 .slaider_controls_wrapper {
   position: absolute;
   bottom: 50px;
-  right: 72%;
-  left: 5%;
+  right: 65%;
+  left: calc(5% + ((100% - 1440px) / 2));
+  
 }
 .script_number{
     display: flex;
