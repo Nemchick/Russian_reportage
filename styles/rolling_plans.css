@@ -1,7 +1,7 @@
 .section_rolling_plans {
   margin: 0 auto;
-  width: 1440px;
-  padding: 128px 72px 109px 72px;
+  
+  padding: 128px 0px 0px 0px;
 }
 .rolling_plans_header {
   color: var(--black, #000);
@@ -84,6 +84,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 @media screen and (min-width: 1670px) {
     .box_rolling_plans .rolling_plans_movies {
         flex-basis: calc(25% - 32px);

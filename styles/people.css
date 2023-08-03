@@ -62,3 +62,18 @@
   right: 72px;
 }
 
+.box_people_animation {
+  position: absolute;
+  background: url(../resources/rr_logo_big.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  width: 1255px;
+  height: 810px;
+  left: 36px;
+  top: 0px;
+  color: #ffff;
+opacity: 0;
+}
+
+
