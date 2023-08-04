@@ -33,13 +33,13 @@ ScrollTrigger.create({
       gsap.to(".about_animation_logo_left", {
         bottom: bottomValue,
         left: horizontalValue,
-        ease: "power2.out"
+        ease: "power1.out"
       });
       
       gsap.to(".about_animation_logo_right", {
         bottom: bottomValue,
         right: horizontalValue,
-        ease: "power2.out"
+        ease: "power1.out"
       });
     }
   });
