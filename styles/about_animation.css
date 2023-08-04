@@ -1,0 +1,71 @@
+.section_about_animation {
+    height: 682px;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:48px;
+    align-items: center;
+    overflow: hidden;
+}
+.text_about_animation{
+    color: var(--black, #000);
+text-align: center;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.about_gradient {
+    width: 923px;
+    height: 100%;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    background: linear-gradient(to bottom, transparent, var(--black, #fff));
+}
+
+.about_animation_logo_left {
+  background: url("../resources/logo_red.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 48px;
+  height: 78px;
+  position: absolute;
+  top: 265px;
+  left: 72px;
+}
+.title_about_animation {
+  width: 923px;
+  height: 200px;
+  
+  color: var(--black, #000);
+  text-align: center;
+
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px; /* 156.25% */
+  text-transform: uppercase;
+}
+.about_animation_logo_right {
+  background: url("../resources/logo_red.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 48px;
+  height: 78px;
+  position: absolute;
+  top: 265px;
+  right: 72px;
+}
+.TEST{
+    width: 1440px;
+    height: 1000px;
+}
+
