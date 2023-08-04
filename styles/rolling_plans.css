@@ -1,7 +1,7 @@
 .section_rolling_plans {
   margin: 0 auto;
   
-  padding: 128px 0px 0px 0px;
+  padding: 128px 0px 80px 0px;
 }
 .rolling_plans_header {
   color: var(--black, #000);
@@ -34,10 +34,11 @@
   text-transform: uppercase;
 }
 .box_rolling_plans{
-    display: flex;
+   
     justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
+
     row-gap: 32px;
 }
 .box_rolling_plans_header {
@@ -48,7 +49,6 @@
 }
 .rolling_plans_movies{
     
-    width: 306px;
     max-height: 529px;
     display: none;
 }
@@ -72,7 +72,7 @@
   text-transform: uppercase;
 }
 .rolling_plans_movies_img {
-  width: 306px;
+  
   height: 437px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,8 +85,30 @@
     align-items: center;
 }
 
-@media screen and (min-width: 1670px) {
-    .box_rolling_plans .rolling_plans_movies {
-        flex-basis: calc(25% - 32px);
-    }
+@media (max-width: 576px) {
+  .box_rolling_plans_header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 10px;
+  }
+  .rolling_plans_header {
+
+    font-size: 24px;
+}
+.rolling_plans_movies_img {
+  
+  height: 257px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 17px;
+}
+.rolling_plans_movies_data{
+  font-size: 10px;
+}
+.rolling_plans_movies_name{
+  font-size: 14px;
+}
+
 }

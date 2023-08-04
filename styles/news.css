@@ -215,6 +215,9 @@
     padding: 16px;
     transition: left 2s;
   }
+  .small_left_news{
+    top: 600px;
+  }
   
   .small_central_news, .small_right_news  {
     top: 969px;
@@ -234,4 +237,97 @@
   .section_news {
     height: 1500px;
   }
+}
+@media (max-width: 576px) {
+  .section_news{
+    padding: 80px 10px 100px 10px;
+  }
+  .left_news{
+    top: 235px;
+    height: 242px;
+   
+  }
+  .section_news.show .left_news {
+    right: 0%;
+}
+.small_left_news{
+  top: 485px;
+}
+  .right_news {
+    height: 180px;
+    left: -300%;
+    top: 485px; /* Начальное положение слева */
+    /* Добавьте анимацию для левого смещения */
+    transition: left 2s;
+  }
+  .small_central_news, .small_right_news  {
+    top: 672px;
+  }
+  .section_news.show .right_news {
+    left: 0%; /* Расположение справа после анимации */
+  }
+  .section_news.show .small_right_news {
+    left: 51%; /* Расположение слева после анимации */
+  }
+  .section_news.show .small_central_news {
+    left: 0%; /* Расположение слева после анимации */
+  }
+  .section_news.show .small_left_news {
+    left: 51%; /* Расположение слева после анимации */
+  }
+  .section_news {
+    height: 969px;
+  }
+  .news_title{
+    font-size: 24px;
+    color: var(--black, #000);
+  }
+  .section_news.show .news_title {
+    left: 4%;
+}
+.small_news{
+  height: 180px;
+  gap: 14px;
+}
+.big_news{
+  gap: 14px;
+}
+.news_btn{
+  position: absolute;
+    z-index: 1;
+    top: 125px;
+    left: -100%;
+    width: 160px;
+    height: 42px;
+    border-radius: 100px;
+    border: 2px solid var(--red-base, #d8251d);
+    background-color: #ffff;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: left 2s;
+}
+.section_news.show .news_btn {
+  left: 3.5%;
+}
+.news_animation_square {
+  background: url("../resources/animation_square.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover; /* Растягивание по ширине и высоте */
+  top: 181px;
+  left: -60%;
+  height: 80%;
+  transform: rotate(27deg);
+  transition: transform 2s, left 2s;
+}
+.news_articles_text{
+  font-size: 12px;
+  line-height: normal;
+}
+.news_articles_data{
+  font-size: 10px;
+}
 }

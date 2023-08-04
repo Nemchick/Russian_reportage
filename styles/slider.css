@@ -206,5 +206,14 @@
     left: 10px;
     right: 10px;
   }
+  .slide_title {
+    font-size: 28px;
+  }
   
+  .slide_data {
+    font-size: 12px;
+  }
+  .slide_text {
+    font-size: 14px;
+  }
 }

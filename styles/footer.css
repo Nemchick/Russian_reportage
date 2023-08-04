@@ -77,7 +77,6 @@
   justify-content: space-around;
 }
 .footer_box_href {
-  
   align-items: center;
   margin-top: 60px;
   display: flex;
@@ -92,68 +91,106 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 18px;
+  margin-bottom: 18px;
 }
-.footer_img{
+.footer_img {
   display: flex;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
 }
-.footer_logo{
+.footer_logo {
   width: 42px;
-    height: 42px;
+  height: 42px;
 }
-.footer_img_bottom{
+.footer_img_bottom {
   display: none;
 }
-.footer_box_address{
+.footer_box_address {
   display: flex;
   justify-content: space-between;
 }
-.footer_box_nav{
+.footer_box_nav {
   display: flex;
   justify-content: space-between;
+}
+.footer_img_link {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.footer_btn {
+  border-radius: 100px;
+  background: var(--grey-base, #eceaea);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
-  .footer_img_center{
+  .footer_protection{
+    text-align: left;
+  }
+  .footer_img_center {
     display: none;
   }
-  .footer_img_bottom{
+  .footer_img_bottom {
     display: block;
   }
-  .footer_img{
+  .footer_img {
     width: 42px;
     height: 42px;
   }
-  .footer_box_btn{
+  .footer_box_btn {
     gap: 8px;
     padding: 5px;
   }
-  .footer_box_address{
+  .footer_box_address {
     justify-content: flex-start;
     gap: 16px;
   }
-  .footer_box_btn_v2{
+  .footer_box_btn_v2 {
     gap: 8px;
     padding: 5px;
   }
-  .footer_box_contact_nav{
+  .footer_box_contact_nav {
     flex-direction: column;
     row-gap: 47px;
   }
-  .footer_box_nav{
+  .footer_box_nav {
     justify-content: flex-start;
     gap: 140px;
-    
   }
 }
 @media (max-width: 768px) {
-  
-  
 }
 @media (max-width: 576px) {
-  .slaider_controls_wrapper{
-    left: 10px;
-    right: 10px;
+  .footer_img_link {
+    width: 20px;
+    height: 20px;
   }
-  
+  .footer_btn{
+    width: 32px;
+  height: 32px;
+  }
+  .header_link{
+   
+font-size: 10px;
+letter-spacing: 0;
+  }
+  .footer_box_href{
+    gap: 6px;
+  }
+  .footer_text{
+    font-size: 12px;
+  }
+  .footer_subtext{
+    font-size: 10px;
+  }
+  .footer_subtitle{
+    font-size: 12px;
+  }
 }
