@@ -37,7 +37,7 @@ line-height: normal;
   width: 48px;
   height: 78px;
   position: absolute;
-  top: 265px;
+  bottom: 340px;
   left: 72px;
 }
 .title_about_animation {
@@ -61,7 +61,7 @@ line-height: normal;
   width: 48px;
   height: 78px;
   position: absolute;
-  top: 265px;
+  bottom: 340px;
   right: 72px;
 }
 .TEST{
