@@ -1,0 +1,125 @@
+.title_about_text {
+  color: var(--black, #000);
+  text-align: center;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.about_text {
+  color: var(--black, #000);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box_text_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.font_about_text {
+  font-size: 20px;
+  font-weight: 600;
+}
+.section_text_about {
+  margin-top: 128px;
+}
+.box_about_img_People {
+  height: 477px;
+  display: flex;
+  position: relative;
+  gap: 25px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.sectio_about_img_People {
+  margin-top: 128px;
+}
+.img_about_People {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.small_img_about_People {
+  top: 7.96%;
+  height: 312px;
+}
+.small_img_about_People_V2 {
+    bottom: 7.96%;
+    height: 312px;
+  }
+.big_img_about_People {
+  left: 25%;
+  height: 100%;
+}
+.left_People {
+  left: -8%;
+}
+.right_People {
+  right: -8%;
+}
+
+@media (max-width: 1400px) {
+  .small_img_about_People, .small_img_about_People_V2 {
+    height: 285px;
+  }
+}
+@media (max-width: 1200px) {
+  .small_img_about_People, .small_img_about_People_V2 {
+    height: 240px;
+  }
+  .box_about_img_People{
+    height: 342px;
+  }
+}
+@media (max-width: 991px) {
+  .small_img_about_People, .small_img_about_People_V2 {
+    height: 180px;
+  }
+  .sectio_about_img_People,
+  .sectio_about_img_People {
+    margin-top: 80px;
+  }
+  .box_about_img_People{
+    height: 252px;
+  }
+}
+@media (max-width: 768px) {
+  .small_img_about_People, .small_img_about_People_V2 {
+    height: 135px;
+  }
+  .box_about_img_People{
+    height: 214px;
+  }
+  
+}
+@media (max-width: 576px) {
+  .title_about_text {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+  .big_img_about_People {
+    left: 20.8%;
+  }
+  .about_text {
+    font-size: 14px;
+  }
+  .font_about_text {
+    font-size: 14px;
+  }
+  .left_People {
+    left: -17.5%;
+  }
+  .right_People {
+    right: -17.5%;
+  }
+  
+}

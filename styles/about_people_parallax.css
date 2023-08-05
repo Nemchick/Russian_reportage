@@ -8,9 +8,7 @@
 .img_parallax {
   border-radius: 25px;
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+  object-fit: cover;
 }
 .small_img_parallax {
   height: 312px;
