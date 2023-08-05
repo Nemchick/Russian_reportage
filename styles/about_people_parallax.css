@@ -1,0 +1,32 @@
+.section_about_people_parallax_animation{
+    width: 1440px;
+    height: 670px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.img_parallax{
+    border-radius: 8px; 
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+}
+.small_img_parallax{
+    width: 416px;
+    height: 312px;
+    top: -60px;
+    
+}
+.bix_img_about_people_parallax{
+    width: 636px;
+height: 477px;
+top: -80px;
+left: 27.9%;
+}
+.left_img_about_people_parallax{
+left: -20px;
+}
+.right_img_about_people_parallax{
+    right:  -20px;
+}

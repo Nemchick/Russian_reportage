@@ -6,6 +6,7 @@
 @import "people.css";
 @import "brend.css";
 @import "about_animation.css";
+@import "about_people_parallax.css";
 
 @font-face {
   font-family: "OpenSans";
