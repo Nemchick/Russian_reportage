@@ -111,6 +111,7 @@
   box-sizing: border-box;
   gap: 48px;
   justify-content: center;
+  margin-bottom: 128px;
 }
 .news_about {
   display: flex;
@@ -193,8 +194,12 @@
   }
   .sectio_about_img_People,
   .section_text_about,
-  .section_news_about {
+  .section_news_about
+   {
     margin-top: 80px;
+  }
+  .box_news_about{
+    margin-bottom: 80px;
   }
   .box_about_img_People {
     height: 252px;

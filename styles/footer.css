@@ -5,14 +5,14 @@
 }
 .footer_section {
   height: 333px;
-  background-image: url("/resources/footer2.svg");
+  background-image: url("../resources/footer2.svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
 }
 .footer_box {
   height: auto;
-  background-image: url("/resources/footer.svg");
+  background-image: url("../resources/footer.svg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 93px 0px 0px 0px;
