@@ -32,7 +32,31 @@ ScrollTrigger.create({
       });
     }
 
-    if (containerWidth <= 721) {
+    if (containerWidth >= 1399) {
+      gsap.to(".about_animation_logo_left", {
+        bottom: `${-13.1965}%`,
+        left: `${45.633}%`,
+        ease: "power1.out"
+      });
+
+      gsap.to(".about_animation_logo_right", {
+        bottom: `${-13.1965}%`,
+        right: `${45.633}%`,
+        ease: "power1.out"
+      });
+    }else if (containerWidth >= 695){
+      gsap.to(".about_animation_logo_left", {
+        bottom: `${-13.1965}%`,
+        left: `${45.9}%`,
+        ease: "power1.out"
+      });
+
+      gsap.to(".about_animation_logo_right", {
+        bottom: `${-13.1965}%`,
+        right: `${45.9}%`,
+        ease: "power1.out"
+      });
+    }else{
       gsap.to(".about_animation_logo_left", {
         bottom: `${-13.1965}%`,
         left: `${41.6}%`,
@@ -44,19 +68,8 @@ ScrollTrigger.create({
         right: `${41.6}%`,
         ease: "power1.out"
       });
-    }else if (containerWidth >= 721){
-      gsap.to(".about_animation_logo_left", {
-        bottom: `${-13.1965}%`,
-        left: `${45.8333}%`,
-        ease: "power1.out"
-      });
-
-      gsap.to(".about_animation_logo_right", {
-        bottom: `${-13.1965}%`,
-        right: `${45.8333}%`,
-        ease: "power1.out"
-      });
     }
+    
   }
 });
 

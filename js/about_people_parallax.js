@@ -6,15 +6,18 @@ const screenWidth = window.innerWidth;
 // Определяем значения top в зависимости от ширины экрана
 let smallImgTop, bixImgTop;
 
-if (screenWidth > 1295) {
+if (screenWidth > 1399) {
   smallImgTop = "56%";
   bixImgTop = "36%";
-} else if (screenWidth > 959) {
-  smallImgTop = "70%";
-  bixImgTop = "60%";
+} else if (screenWidth > 991) {
+  smallImgTop = "82%";
+  bixImgTop = "65%";
+}else if (screenWidth > 575){
+    smallImgTop = "100%";
+  bixImgTop = "70%";
 }else{
-    smallImgTop = "59%";
-  bixImgTop = "62%";
+  smallImgTop = "78%";
+  bixImgTop = "73%";
 }
 
 // Используем полученные значения top при анимации
