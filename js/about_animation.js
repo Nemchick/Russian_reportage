@@ -1,45 +1,62 @@
 ScrollTrigger.create({
-    trigger: ".section_about_animation",
-    start: "top top",
-    end: "bottom center",
-    scrub: true,
-    onUpdate: (self) => {
-      const progress = self.progress;
-      const bottomValue = 340 - (progress * 340);
-      const horizontalValue = 72 + (progress * 624); // Диапазон смещения: 72px до 696px
-      let heightValue;
-      
-      if (self.direction === -1) {
-        // Возвращение about_gradient в прежнее состояние
-        gsap.to(".about_gradient", {
-          height: "100%",
-          ease: "power2.out"
-        });
+  trigger: ".section_about_animation",
+  start: "top top",
+  end: "bottom center",
+  scrub: true,
+  onUpdate: (self) => {
+    const progress = self.progress;
+    const containerWidth = document.querySelector(".section_about_animation").offsetWidth;
+    const containerHeight = document.querySelector(".section_about_animation").offsetHeight;
+    const bottomValue = (378 - (progress * 468)) / containerHeight * 100;
+    const horizontalValue = (72 + (progress * 533)) / containerWidth * 100;
+    let heightValue;
+
+    if (self.direction === -1) {
+      // Возвращение about_gradient в прежнее состояние
+      gsap.to(".about_gradient", {
+        height: "80%",
+        ease: "power2.out"
+      });
+    } else {
+      if (progress > 0.5) {
+        // Уменьшение высоты от 100% до 0%
+        heightValue = ((1 - progress) * 100) + "%";
       } else {
-        if (progress > 0.5) {
-          // Уменьшение высоты от 100% до 0%
-          heightValue = ((1 - progress) * 100) + "%";
-        } else {
-          // Увеличение высоты от 0% до 100%
-          heightValue = (progress * 100) + "%";
-        }
-  
-        gsap.to(".about_gradient", {
-          height: heightValue,
-          ease: "power2.out"
-        });
+        // Увеличение высоты от 0% до 100%
+        heightValue = (progress * 100) + "%";
       }
-      
+
+      gsap.to(".about_gradient", {
+        height: heightValue,
+        ease: "power2.out"
+      });
+    }
+
+    if (containerWidth <= 721) {
       gsap.to(".about_animation_logo_left", {
-        bottom: bottomValue,
-        left: horizontalValue,
+        bottom: `${-13.1965}%`,
+        left: `${41.6}%`,
         ease: "power1.out"
       });
-      
+
       gsap.to(".about_animation_logo_right", {
-        bottom: bottomValue,
-        right: horizontalValue,
+        bottom: `${-13.1965}%`,
+        right: `${41.6}%`,
+        ease: "power1.out"
+      });
+    }else if (containerWidth >= 721){
+      gsap.to(".about_animation_logo_left", {
+        bottom: `${-13.1965}%`,
+        left: `${45.8333}%`,
+        ease: "power1.out"
+      });
+
+      gsap.to(".about_animation_logo_right", {
+        bottom: `${-13.1965}%`,
+        right: `${45.8333}%`,
         ease: "power1.out"
       });
     }
-  });
+  }
+});
+

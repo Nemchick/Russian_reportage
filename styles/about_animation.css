@@ -1,49 +1,43 @@
 .section_about_animation {
-    height: 682px;
-    max-width: 1440px;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap:48px;
-    align-items: center;
-    overflow: hidden;
+  height: 682px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
 }
-.text_about_animation{
-    color: var(--black, #000);
-text-align: center;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
+.text_about_animation {
+  color: var(--black, #000);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .about_gradient {
-    width: 923px;
-    height: 100%;
-    bottom: 0px;
-    position: absolute;
-    opacity: 1;
-    background: linear-gradient(to bottom, transparent, var(--black, #fff));
+  bottom: 20%;
+  height: 80%;
+  position: absolute;
+  opacity: 1;
+  background: linear-gradient(to bottom, transparent, var(--black, #fff));
 }
 
 .about_animation_logo_left {
   background: url("../resources/logo_red.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: 50%;
-  width: 48px;
+  
   height: 78px;
   position: absolute;
-  bottom: 340px;
-  left: 72px;
+  bottom: 56%;
+  z-index: 2;
+  left: 5%;
 }
 .title_about_animation {
-  width: 923px;
-  height: 200px;
-  
+  height: auto;
+
   color: var(--black, #000);
   text-align: center;
 
@@ -56,16 +50,53 @@ line-height: normal;
 .about_animation_logo_right {
   background: url("../resources/logo_red.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  
   background-position: 50%;
-  width: 48px;
+  z-index: 2;
+
   height: 78px;
   position: absolute;
-  bottom: 340px;
-  right: 72px;
+  bottom: 56%;
+  right: 5%;
 }
-.TEST{
-    width: 1440px;
-    height: 1000px;
+.textv1 {
+  line-height: 38px;
 }
 
+@media (max-width: 1400px) {
+  .about_animation_logo_left {
+    left: 45.8333%;
+    bottom: -13.1965%;
+  }
+  .about_animation_logo_right {
+    right: 45.8333%;
+    bottom: -13.1965%;
+  }
+}
+@media (max-width: 991px) {
+  .slide_vidio {
+    display: none;
+  }
+  .slaider_controls_wrapper {
+    left: 15%;
+    right: 15%;
+  }
+  .title_about_animation {
+    font-size: 28px;
+    line-height: 71px;
+  }
+  .text_about_animation {
+    font-size: 16px;
+  }
+  .span_text_about {
+    line-height: 38px;
+  }
+  
+}
+@media (max-width: 576px) {
+  .title_about_animation {
+    font-size: 28px;
+
+    line-height: 71px;
+  }
+}
