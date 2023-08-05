@@ -53,9 +53,9 @@
   height: 312px;
 }
 .small_img_about_People_V2 {
-    bottom: 7.96%;
-    height: 312px;
-  }
+  bottom: 7.96%;
+  height: 312px;
+}
 .big_img_about_People {
   left: 25%;
   height: 100%;
@@ -66,40 +66,164 @@
 .right_People {
   right: -8%;
 }
-
+.news_about_btn {
+  width: 160px;
+  height: 42px;
+  border-radius: 100px;
+  border: 2px solid var(--red-base, #d8251d);
+  background-color: #ffff;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.news_about_title {
+  color: var(--black, #000);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.section_news_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-top: 128px;
+}
+.heade_news_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.box_news_articles_heade_news_about {
+  display: flex;
+  gap: 24px;
+  row-gap: 24px;
+  justify-content: space-between;
+   
+}
+.box_news_about {
+  box-sizing: border-box;
+  gap: 48px;
+  justify-content: center;
+}
+.news_about {
+  display: flex;
+  width: 33%;
+  gap: 16px;
+  padding: 16px;
+  flex-direction: column;
+  height: 416px;
+  justify-content: flex-end;
+}
+.news_about_first {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/12_films.png"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.news_about_third {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/news_animation_miyazaki.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.news_about_second {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/new_series_news.jpg"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.news_about_fourth {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.58) 30.18%,
+      #000 100%
+    ),
+    url("../resources/new_series_news.jpg"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: none;
+}
 @media (max-width: 1400px) {
-  .small_img_about_People, .small_img_about_People_V2 {
+  .small_img_about_People,
+  .small_img_about_People_V2 {
     height: 285px;
   }
 }
 @media (max-width: 1200px) {
-  .small_img_about_People, .small_img_about_People_V2 {
+  .small_img_about_People,
+  .small_img_about_People_V2 {
     height: 240px;
   }
-  .box_about_img_People{
+  .box_about_img_People {
     height: 342px;
   }
 }
 @media (max-width: 991px) {
-  .small_img_about_People, .small_img_about_People_V2 {
+  .small_img_about_People,
+  .small_img_about_People_V2 {
     height: 180px;
   }
   .sectio_about_img_People,
-  .section_text_about {
+  .section_text_about,
+  .section_news_about {
     margin-top: 80px;
   }
-  .box_about_img_People{
+  .box_about_img_People {
     height: 252px;
+  }
+  .news_about_fourth {
+    display: flex;
+  }
+  .box_news_articles_heade_news_about {
+    gap: 10px;
+    row-gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .news_about{
+    width: 48%;
+  }
+  .heade_news_about{
+    align-items: flex-start;
   }
 }
 @media (max-width: 768px) {
-  .small_img_about_People, .small_img_about_People_V2 {
+  .small_img_about_People,
+  .small_img_about_People_V2 {
     height: 135px;
   }
-  .box_about_img_People{
+  .box_about_img_People {
     height: 214px;
   }
-  
 }
 @media (max-width: 576px) {
   .title_about_text {
@@ -121,5 +245,13 @@
   .right_People {
     right: -17.5%;
   }
-  
+  .news_about{
+    height: 180px;
+    gap: 14px;
+    padding: 8px;
+  }
+  .news_about_title{
+    font-size: 24px;
+    
+  }
 }
