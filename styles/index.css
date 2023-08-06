@@ -8,7 +8,8 @@
 @import "about_animation.css";
 @import "about_people_parallax.css";
 @import "about.css";
-
+@import "category_catalog.css";
+@import "catalog_all_film.css";
 @font-face {
   font-family: "OpenSans";
   src: url("../resources/OpenSans-VariableFont_wdth\,wght.ttf");
@@ -53,4 +54,7 @@
     text-transform: uppercase;
     padding: 12px 25px 12px 25px;
     
+}
+.cursor_pointer{
+  cursor: pointer;
 }

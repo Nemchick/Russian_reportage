@@ -1,0 +1,37 @@
+.box_scroll_category_catalog {
+  display: flex;
+  overflow-x: scroll; 
+  white-space: nowrap;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.name_categori_catalog {
+  /* margin-left: 16px; */
+  max-width: 95%;
+  color: var(--white, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 138.889% */
+  text-transform: uppercase;
+}
+.category_catalog {
+ 
+  height: 134px;
+}
+.header_catalog{
+    margin-top: 140px;
+}
+.box_news_about_title{
+    margin-bottom: 31px;
+}
+@media (max-width: 991px) {
+    .category_catalog {
+        height: 117px;
+      }
+      .header_catalog{
+        margin-top: 64px;
+    }
+}

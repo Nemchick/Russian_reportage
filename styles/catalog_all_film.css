@@ -1,0 +1,93 @@
+.box_filter_catalog {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  cursor: pointer;
+}
+.section_catalog_all_film {
+  margin-top: 128px;
+}
+.text_filter_catalog {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.filters_catalog_all_film {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+.box_filters_catalog_all_film {
+  display: flex;
+  gap: 24px;
+}
+/* Скрытие попапов по умолчанию */
+.popup {
+  display: none;
+}
+
+/* Отображение попапа при наличии активного класса */
+.popup.active {
+  display: flex;
+  /* Дополнительные стили попапа */
+}
+.popup_filters {
+  position: absolute;
+  flex-direction: column;
+  gap: 12px;
+  width: 150px;
+  background-color: #fff;
+  top: 35px;
+  border-radius: 20px;
+  padding: 16px;
+  border: solid #a5a4a4 1px;
+}
+.box_news_about_btn {
+  display: flex;
+  gap: 8px;
+}
+.box_catalog_catalog_all_film {
+  padding: 32px 0px 64px;
+  row-gap: 32px;
+}
+.nav_number_filter_catalog {
+  color: var(--black, #000);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  text-transform: uppercase;
+}
+.box_nav_catalog_linck{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.box_nav_catalog_btn{
+    display: flex;
+    justify-content: space-between;
+   padding: 64px 0px 128px 0px;
+}
+.nav_catalog_btn{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1199px) {
+  .box_filter_catalog {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+    .box_catalog_catalog_all_film {
+        padding: 32px 0px 37px;
+        row-gap: 20px;
+      }
+      .box_nav_catalog_btn{
+       
+       padding: 48px 0px 97px 0px;
+    }
+}
