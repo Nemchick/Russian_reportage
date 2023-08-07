@@ -10,6 +10,9 @@
 @import "about.css";
 @import "category_catalog.css";
 @import "catalog_all_film.css";
+@import "film_full_screen.css";
+@import "film_info.css";
+
 @font-face {
   font-family: "OpenSans";
   src: url("../resources/OpenSans-VariableFont_wdth\,wght.ttf");
@@ -36,25 +39,25 @@
 .collor_grey {
   background-color: #eceaea;
 }
-.z_index{
-    z-index: 100;
+.z_index {
+  z-index: 100;
 }
-.btn_red{
+.btn_red {
   text-decoration: none;
-    height: 42px;
-    border-radius: 100px;
-    background: var(--red-base, #d8251d);
-    color: var(--white, #fff);
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.24px;
-    text-transform: uppercase;
-    padding: 12px 25px 12px 25px;
-    
+  height: 42px;
+  border-radius: 100px;
+  background: var(--red-base, #d8251d);
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  padding: 12px 25px 12px 25px;
 }
-.cursor_pointer{
+.cursor_pointer {
   cursor: pointer;
 }
+
