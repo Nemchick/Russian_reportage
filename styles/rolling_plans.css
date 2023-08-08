@@ -59,8 +59,8 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  line-height: 20px;
+  
+  line-height: 30px;
 }
 .rolling_plans_movies_name {
     max-width: 306px;

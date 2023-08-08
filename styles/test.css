@@ -57,9 +57,7 @@ svg {
 	overflow: visible;
 	display: block;
 }
-svg text {
-    text-anchor: middle;
-}
+
 svg mask rect {
 /*   fill: rgba(255, 255, 255, 0.8); */
   fill: white;
