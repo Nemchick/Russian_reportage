@@ -1,5 +1,3 @@
-
-
 var controller = new ScrollMagic.Controller(); 
 
 // container pin
@@ -23,7 +21,7 @@ tl.add(
 
 new ScrollMagic.Scene({
   triggerElement: ".container_text", // Указываем, что скролл нужно считать внутри блока .container_text
-  duration: 800// Длительность сцены в пикселях (от начала до конца сцены)
+  duration: 1400// Длительность сцены в пикселях (от начала до конца сцены)
 })
 .setTween(tl) // Привязка анимационной последовательности к сцене
 .addTo(controller);
