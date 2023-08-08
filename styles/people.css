@@ -6,39 +6,38 @@
   position: relative;
 }
 .people_img {
-  border-radius: 8px;
+  border-radius: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
 }
 .people_basic {
   position: absolute;
-  width: 635px;
+
   height: 508px;
-  bottom: 143px;
-  left: 402px;
+  top: 15%;
+  left: 25%;
   z-index: 1;
 }
 .people_bottom {
   z-index: 2;
   position: absolute;
-  bottom: 13px;
-  right: 510px;
+  top: 55%;
+  left: 40%;
 }
 .people_left {
   z-index: 2;
   position: absolute;
-  bottom: 240px;
-  left: 182px;
+  top: 33%;
+  left: 9%;
 }
 .people_right {
   z-index: 0;
   position: absolute;
-  bottom: 540px;
-  right: 292px;
+  top: 3%;
+  right: 17%;
 }
 .people_img_small {
-  width: 305px;
   height: 229px;
 }
 .people_text {
@@ -52,19 +51,22 @@
 .people_btn {
   z-index: 1;
   position: absolute;
-  bottom: 145px;
-  right: 210px;
+  top: 60%;
+  right: 7%;
 }
 .people_text_position {
   z-index: 1;
   position: absolute;
-  bottom: 219px;
-  right: 72px;
+  top: 30%;
+  right: 0%;
+}
+.people_animation {
+  position: relative;
+  height: 100%;
 }
 
 .box_people_animation {
   position: absolute;
-  background: url(../resources/rr_logo_big.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
@@ -73,7 +75,9 @@
   left: 36px;
   top: 0px;
   color: #ffff;
-opacity: 0;
+  opacity: 0;
 }
-
-
+.img_animation_people{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
