@@ -60,6 +60,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  line-height: 20px;
 }
 .rolling_plans_movies_name {
     max-width: 306px;
@@ -96,6 +97,9 @@
 
     font-size: 24px;
 }
+.section_rolling_plans{
+  padding: 80px 0px 0px 0px;
+}
 .rolling_plans_movies_img {
   
   height: 257px;
@@ -106,6 +110,7 @@
 }
 .rolling_plans_movies_data{
   font-size: 10px;
+  line-height: 22px;
 }
 .rolling_plans_movies_name{
   font-size: 14px;

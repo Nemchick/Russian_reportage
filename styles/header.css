@@ -19,6 +19,16 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+.burger_header_link{
+  color: var(--black, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  text-decoration: none
+}
 .header_box_link {
   border-radius: 33px;
   background: var(--grey-base, #eceaea);
@@ -155,6 +165,7 @@
     align-items: center;
     justify-content: center;
   }
+  
 }
 @media (max-width: 576px) {
   .header_logo {
