@@ -25,6 +25,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .img_24px {
   width: 24px;
   height: 24px;
@@ -36,6 +37,7 @@
   height: 32px;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 .collor_grey {
   background-color: #eceaea;
@@ -44,6 +46,7 @@
   z-index: 100;
 }
 .btn_red {
+  position: relative;
   text-decoration: none;
   height: 42px;
   border-radius: 100px;
@@ -57,8 +60,26 @@
   letter-spacing: 0.24px;
   text-transform: uppercase;
   padding: 12px 25px 12px 25px;
+  z-index: 1
+}
+.hover_button_about_the_film {
+  position: absolute;
+  z-index: -1;
+  background-image: url("../resources/hover_button_about_the_film.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 42px;
+  top: 0;
+  right: 0;
+}
+.btn_red:hover .hover_button_about_the_film {
+  top: 2px;
+  left: 2px;
+}
+.btn_red:hover {
+  background: var(--red-base, #971a14);
 }
 .cursor_pointer {
   cursor: pointer;
 }
-

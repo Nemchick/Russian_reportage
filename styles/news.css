@@ -38,7 +38,7 @@
 
 .news_btn {
   position: absolute;
-  z-index: 1;
+  
   right: -100%; /* Начальное положение справа */
   width: 160px;
   height: 42px;
@@ -51,6 +51,33 @@
   justify-content: center;
   cursor: pointer;
   transition: right 2s; /* Добавьте анимацию для правого смещения */
+}
+.news_btn:hover{
+  background: var(--red-30, #971A14);
+  border: 2px solid var(--red-base, #971A14);
+}
+.news_btn:hover .rolling_plans_btn_text{
+ color: #fff;
+}
+.news_btn:hover .rolling_plans_btn_img_hover{
+  background-image: url("../resources/Arrow_right_fff.png");
+ }
+ .news_btn:hover .news_btn_hover{
+  opacity: 1;
+  left: 3px;
+ }
+
+
+.news_btn_hover{
+  position: absolute;
+  background-image: url("../resources/news_btn_hover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 155.8px;
+  height: 46px;
+  opacity: 0;
+  z-index: -1;
+  top: 0px;
 }
 
 .big_news {
@@ -294,7 +321,7 @@
 }
 .news_btn{
   position: absolute;
-    z-index: 1;
+    
     top: 125px;
     left: -100%;
     width: 160px;

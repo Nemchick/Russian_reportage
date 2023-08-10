@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  
+
   justify-content: space-around;
   max-width: 1440px;
   margin: 0 auto;
@@ -10,7 +10,6 @@
 
 .header_link {
   color: var(--black, #000);
-
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -19,7 +18,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.burger_header_link{
+
+.header_link:hover {
+  color: #d8251d;
+}
+.burger_header_link {
   color: var(--black, #000);
   font-size: 20px;
   font-style: normal;
@@ -27,7 +30,10 @@
   line-height: normal;
   letter-spacing: 0.28px;
   text-transform: uppercase;
-  text-decoration: none
+  text-decoration: none;
+}
+.burger_header_link:hover {
+  color: #d8251d;
 }
 .header_box_link {
   border-radius: 33px;
@@ -43,6 +49,7 @@
 }
 
 .header_btn {
+  position: relative;
   border-radius: 100px;
   background: var(--grey-base, #eceaea);
   width: 42px;
@@ -51,6 +58,32 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.header_btn:hover .hover_circle {
+  top: 2px;
+  left: 2px;
+}
+
+.hover_circle {
+  position: absolute;
+  background-image: url("../resources/hover_circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 42px;
+  height: 42px;
+  top: 0;
+  right: 0;
+  z-index: -1; /* Add this line to position hover_circle below header_btn */
+}
+
+.search_header_btn {
+  background-image: url("../resources/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search_header_btn:hover {
+  background-image: url("../resources/search_red.svg");
 }
 .header_burger {
   outline: none;
@@ -73,12 +106,22 @@
 
 .burger-btn {
   display: none;
-
+  position: relative;
   border-radius: 100px;
   background-color: #eceaea;
   width: 42px;
   height: 42px;
   cursor: pointer;
+  background-image: url("../resources/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.burger-btn:hover .hover_circle {
+  top: 2px;
+  left: 2px;
+}
+.burger-btn:hover  {
+  background-image: url("../resources/burger_red.svg");
 }
 .burger__contact {
   margin: 40px 10px 0px 10px;
@@ -165,7 +208,6 @@
     align-items: center;
     justify-content: center;
   }
-  
 }
 @media (max-width: 576px) {
   .header_logo {
@@ -173,10 +215,9 @@
     height: 46px;
   }
   .header_box_btn {
-    
     gap: 8px;
   }
-  .header{
+  .header {
     margin-top: 39px;
   }
 }
