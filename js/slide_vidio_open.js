@@ -8,7 +8,7 @@ slideVidio.addEventListener('click', function(event) {
 
 // Функция для открытия видео
 function openVideo() {
-  const videoUrl = 'https://youtu.be/CF34727AxJA'; // Ссылка на YouTube видео с включенной автозапуском
+  const videoUrl = 'https://www.youtube.com/embed/w0m2C3lN1h8'; // Ссылка на YouTube видео с включенной автозапуском
   const videoIframe = document.getElementById('video-iframe');
   
   videoIframe.setAttribute('src', videoUrl); // Устанавливаем ссылку на видео в атрибут src iframe
