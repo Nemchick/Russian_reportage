@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link rel="icon" href="resources/logo.svg" type="image/png" />
     <link href="styles/bootstrap-grid.min.css" rel="stylesheet" />
     <title>Русский репортаж</title>
@@ -527,10 +528,14 @@
         </div>
       </div>
     </div>
+    <div id="video-container" style="display: none;">
+      <iframe id="video-iframe" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
     
     <div id="footer-placeholder"></div>
 
- 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/gsap.min.js"></script>
