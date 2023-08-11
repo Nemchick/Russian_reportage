@@ -106,11 +106,13 @@
   background: url("../resources/video_slide1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 .slide_vidio_slide_2 {
   background: url("../resources/video_slide2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .slide_vidio_btn {
@@ -223,6 +225,9 @@
 @media (max-width: 768px) {
 }
 @media (max-width: 576px) {
+  .slaider_conteiner{
+    padding-bottom: 10px;
+  }
   .slaider_controls_wrapper {
     left: 10px;
     right: 10px;

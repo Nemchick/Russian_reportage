@@ -67,6 +67,7 @@
   right: -8%;
 }
 .news_about_btn {
+  position: relative;
   width: 160px;
   height: 42px;
   border-radius: 100px;
@@ -114,6 +115,7 @@
   margin-bottom: 128px;
 }
 .news_about {
+  position: relative;
   display: flex;
   width: 33%;
   gap: 16px;
@@ -121,6 +123,23 @@
   flex-direction: column;
   height: 416px;
   justify-content: flex-end;
+}
+.news_about:hover .about_small_news_red_hover{
+  left: 10px;
+  top: 10px;
+}
+.about_small_news_red_hover{
+  position: absolute;
+  background: url("../resources/small_news_red_hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: -1;
+  opacity: 1;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  width: 100%;
 }
 .news_about_first {
   background: linear-gradient(

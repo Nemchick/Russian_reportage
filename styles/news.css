@@ -14,6 +14,7 @@
   top: 0%;
   left: -60%;
   height: 100%;
+  z-index: -1;
   transform: rotate(27deg);
   transition: transform 2s, left 2s;
 }
@@ -38,7 +39,7 @@
 
 .news_btn {
   position: absolute;
-  
+
   right: -100%; /* Начальное положение справа */
   width: 160px;
   height: 42px;
@@ -52,23 +53,22 @@
   cursor: pointer;
   transition: right 2s; /* Добавьте анимацию для правого смещения */
 }
-.news_btn:hover{
-  background: var(--red-30, #971A14);
-  border: 2px solid var(--red-base, #971A14);
+.news_btn:hover {
+  background: var(--red-30, #971a14);
+  border: 2px solid var(--red-base, #971a14);
 }
-.news_btn:hover .rolling_plans_btn_text{
- color: #fff;
+.news_btn:hover .rolling_plans_btn_text {
+  color: #fff;
 }
-.news_btn:hover .rolling_plans_btn_img_hover{
+.news_btn:hover .rolling_plans_btn_img_hover {
   background-image: url("../resources/Arrow_right_fff.png");
- }
- .news_btn:hover .news_btn_hover{
+}
+.news_btn:hover .news_btn_hover {
   opacity: 1;
   left: 3px;
- }
+}
 
-
-.news_btn_hover{
+.news_btn_hover {
   position: absolute;
   background-image: url("../resources/news_btn_hover.svg");
   background-repeat: no-repeat;
@@ -91,6 +91,7 @@
 }
 
 .small_news {
+  width: 31%;
   height: 416px;
   position: absolute;
   z-index: 1;
@@ -101,6 +102,32 @@
   padding: 16px;
   transition: left 2s;
 }
+.hover_big:hover .big_news_fff_hover {
+  left: 2.5%;
+  top: 180px;
+  opacity: 1;
+}
+.hover_big:hover .big_news_red_hover {
+  right: 0.5%;
+  top: 180px;
+  opacity: 1;
+}
+.hover_big:hover .small_news_fff_hover {
+  left: 2%;
+  top: 615px;
+  opacity: 1;
+}
+.hover_big:hover .small_news_fff_hover_v2 {
+  left: 35%;
+  top: 615px;
+  opacity: 1;
+}
+.hover_big:hover .small_news_red_hover {
+  left: 68%;
+  top: 615px;
+  opacity: 1;
+}
+
 .left_news {
   height: 416px;
   background: linear-gradient(
@@ -117,6 +144,57 @@
   transition: right 2s;
   right: -300%;
   top: 166px; /* Начальное положение слева */
+  z-index: 2;
+  width: 48%;
+}
+.big_news_fff_hover {
+  position: absolute;
+  background: url("../resources/big_news_fff_hover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 1;
+  opacity: 0;
+  height: 414px;
+  top: 166px;
+
+  width: 48%;
+}
+.big_news_red_hover {
+  position: absolute;
+  background: url("../resources/new_big_red_hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 0;
+  opacity: 0;
+  height: 414px;
+  top: 166px;
+  width: 48%;
+}
+.small_news_fff_hover {
+  position: absolute;
+  background: url("../resources/small_news_fff_hover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 0;
+  opacity: 0;
+  height: 408px;
+  top: 600px;
+  width: 32%;
+}
+.small_news_red_hover {
+  position: absolute;
+  background: url("../resources/small_news_red_hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 0;
+  opacity: 0;
+  height: 408px;
+  top: 600px;
+  width: 32%;
 }
 .right_news {
   height: 416px;
@@ -135,6 +213,7 @@
   top: 166px; /* Начальное положение слева */
   /* Добавьте анимацию для левого смещения */
   transition: right 2s;
+  width: 48%;
 }
 .small_left_news {
   background: linear-gradient(
@@ -193,16 +272,16 @@
   right: 50%; /* Расположение слева после анимации */
 }
 .section_news.show .small_left_news {
-  left: 0%; /* Расположение слева после анимации */
+  left: 2%; /* Расположение слева после анимации */
 }
 .section_news.show .small_central_news {
-  left: 34.2%; /* Расположение слева после анимации */
+  left: 35%; /* Расположение слева после анимации */
 }
 .section_news.show .small_right_news {
-  left: 68.4%; /* Расположение слева после анимации */
+  left: 68%; /* Расположение слева после анимации */
 }
 .section_news.show .right_news {
-  right: -1%; /* Расположение справа после анимации */
+  right: 1%; /* Расположение справа после анимации */
 }
 .section_news.show .news_title {
   left: 2%; /* Расположение слева после анимации */
@@ -219,12 +298,31 @@
   line-height: 31px; /* 155% */
   text-transform: uppercase;
 }
+
 @media (max-width: 991px) {
-  
+  .left_news {
+    width: 98%;
+  }
+  .hover_big:hover .small_news_fff_hover {
+    opacity: 0;
+  }
+  .hover_big:hover .small_news_fff_hover_v2 {
+    opacity: 0;
+  }
+  .hover_big:hover .small_news_red_hover {
+    opacity: 0;
+  }
+  .hover_big:hover .big_news_fff_hover {
+    opacity: 0;
+  }
+  .hover_big:hover .big_news_red_hover {
+    opacity: 0;
+  }
   .section_news.show .left_news {
     right: 0%;
   }
   .right_news {
+    width: 48%;
     height: 360px;
     left: -300%;
     top: 600px; /* Начальное положение слева */
@@ -232,6 +330,7 @@
     transition: left 2s;
   }
   .small_news {
+    width: 48%;
     height: 360px;
     position: absolute;
     z-index: 1;
@@ -242,44 +341,44 @@
     padding: 16px;
     transition: left 2s;
   }
-  .small_left_news{
+  .small_left_news {
     top: 600px;
   }
-  
-  .small_central_news, .small_right_news  {
-    top: 969px;
+
+  .small_central_news,
+  .small_right_news {
+    top: 975px;
   }
   .section_news.show .right_news {
-    left: 0%; /* Расположение справа после анимации */
+    left: 2%; /* Расположение справа после анимации */
   }
   .section_news.show .small_right_news {
-    left: 51%; /* Расположение слева после анимации */
+    left: 52%; /* Расположение слева после анимации */
   }
   .section_news.show .small_central_news {
-    left: 0%; /* Расположение слева после анимации */
+    left: 2%; /* Расположение слева после анимации */
   }
   .section_news.show .small_left_news {
-    left: 51%; /* Расположение слева после анимации */
+    left: 52%; /* Расположение слева после анимации */
   }
   .section_news {
     height: 1500px;
   }
 }
 @media (max-width: 576px) {
-  .section_news{
+  .section_news {
     padding: 80px 10px 100px 10px;
   }
-  .left_news{
+  .left_news {
     top: 235px;
     height: 242px;
-   
   }
   .section_news.show .left_news {
     right: 0%;
-}
-.small_left_news{
-  top: 485px;
-}
+  }
+  .small_left_news {
+    top: 485px;
+  }
   .right_news {
     height: 180px;
     left: -300%;
@@ -287,7 +386,8 @@
     /* Добавьте анимацию для левого смещения */
     transition: left 2s;
   }
-  .small_central_news, .small_right_news  {
+  .small_central_news,
+  .small_right_news {
     top: 672px;
   }
   .section_news.show .right_news {
@@ -305,23 +405,23 @@
   .section_news {
     height: 969px;
   }
-  .news_title{
+  .news_title {
     font-size: 24px;
     color: var(--black, #000);
   }
   .section_news.show .news_title {
     left: 4%;
-}
-.small_news{
-  height: 180px;
-  gap: 14px;
-}
-.big_news{
-  gap: 14px;
-}
-.news_btn{
-  position: absolute;
-    
+  }
+  .small_news {
+    height: 180px;
+    gap: 14px;
+  }
+  .big_news {
+    gap: 14px;
+  }
+  .news_btn {
+    position: absolute;
+
     top: 125px;
     left: -100%;
     width: 160px;
@@ -335,26 +435,26 @@
     justify-content: center;
     cursor: pointer;
     transition: left 2s;
-}
-.section_news.show .news_btn {
-  left: 3.5%;
-}
-.news_animation_square {
-  background: url("../resources/animation_square.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  background-size: cover; /* Растягивание по ширине и высоте */
-  top: 181px;
-  left: -60%;
-  height: 80%;
-  transform: rotate(27deg);
-  transition: transform 2s, left 2s;
-}
-.news_articles_text{
-  font-size: 12px;
-  line-height: normal;
-}
-.news_articles_data{
-  font-size: 10px;
-}
+  }
+  .section_news.show .news_btn {
+    left: 3.5%;
+  }
+  .news_animation_square {
+    background: url("../resources/animation_square.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover; /* Растягивание по ширине и высоте */
+    top: 181px;
+    left: -60%;
+    height: 80%;
+    transform: rotate(27deg);
+    transition: transform 2s, left 2s;
+  }
+  .news_articles_text {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .news_articles_data {
+    font-size: 10px;
+  }
 }

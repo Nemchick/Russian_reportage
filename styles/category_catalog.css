@@ -6,7 +6,16 @@
   width: 100%;
   height: 150px;
 }
+.btn_nav_catalog{
+  color: var(--black, #000);
+text-align: right;
 
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
 .name_categori_catalog {
   /* margin-left: 16px; */
   max-width: 95%;

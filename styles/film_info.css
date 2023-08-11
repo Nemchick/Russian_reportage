@@ -84,6 +84,7 @@
   
 }
 .img_carousel_film_info {
+  
   border-radius: 8px;
   object-fit: cover;
 }
@@ -204,6 +205,14 @@
       .rolling_plans_v2{
         display: none;
       }
+      .secton_film_info {
+        margin-top: 80px;
+      }
+      .container_film_info_text {
+       
+        gap: 40px;
+        
+      }
   }
   @media (max-width: 767px) {
     .box_carousel_film_info{
@@ -240,6 +249,13 @@
     .title_film_info{
         font-size: 24px;
     }
+    .film_info_Poster{
+      width: 370px;
+      height: 528px;
+  }
+  .box_film_info_Poster{
+    height: 528px;
+}
     .text_film_info{
         font-size: 14px;
     }
@@ -255,10 +271,10 @@
         height: 822px;
         transform: rotate(50deg);
         right: -200%;
-        top: 330px;
+        top: 115px;
       }
       .box_film_info_Poster .animation_square_info_film {
-        right: -85%;
+        right: -153%;
         transform: rotate(90deg);
       }
     
