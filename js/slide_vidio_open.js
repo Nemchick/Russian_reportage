@@ -1,23 +1,26 @@
-const slideVidio = document.querySelector('.slide_vidio_slide_2');
+const slideVidioSlide2 = document.querySelector(".slide_vidio_slide_2");
+const slideVidioSlide1 = document.querySelector(".slide_vidio_slide_1");
 
-// Добавляем обработчик события click
-slideVidio.addEventListener('click', function(event) {
-  event.preventDefault(); // Предотвращаем переход по ссылке
-  openVideo(); // Открываем видео
+slideVidioSlide2.addEventListener("click", function (event) {
+  event.preventDefault();
+  openVideo("https://www.youtube.com/embed/Ip44RbkH8WI");
 });
 
-// Функция для открытия видео
-function openVideo() {
-  const videoUrl = 'https://www.youtube.com/embed/w0m2C3lN1h8'; // Ссылка на YouTube видео с включенной автозапуском
-  const videoIframe = document.getElementById('video-iframe');
-  
-  videoIframe.setAttribute('src', videoUrl); // Устанавливаем ссылку на видео в атрибут src iframe
+slideVidioSlide1.addEventListener("click", function (event) {
+  event.preventDefault();
+  openVideo("https://www.youtube.com/embed/Ip44RbkH8WI");
+});
+
+function openVideo(videoUrl) {
+  const videoIframe = document.getElementById("video-iframe");
+  videoIframe.setAttribute("src", videoUrl);
+
   $.fancybox.open({
-    src: '#video-container',
-    type: 'inline',
-    touch: false, // Отключаем жесты прокрутки на мобильных устройствах
-    afterClose: function() {
-      videoIframe.setAttribute('src', ''); // Обнуляем ссылку на видео после закрытия модального окна
-    }
+    src: "#video-container",
+    type: "inline",
+    touch: false,
+    afterClose: function () {
+      videoIframe.setAttribute("src", "");
+    },
   });
 }

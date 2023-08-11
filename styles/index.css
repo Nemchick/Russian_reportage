@@ -13,6 +13,8 @@
 @import "film_full_screen.css";
 @import "film_info.css";
 @import "test.css";
+@import "jquery.fancybox.min.css";
+
 
 @font-face {
   font-family: "OpenSans";
