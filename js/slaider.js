@@ -6,7 +6,8 @@ const nextButtonNode = document.querySelector(".slaider_control_next");
 const timerProgressElement = document.getElementById("timerProgress");
 let timerProgressInterval;
 let activeId;
-let isFirstProgressFill = true; // флаг первого заполнения прогресса
+let isFirstProgressFill = true;
+let touchStartX;
 
 init();
 
@@ -20,6 +21,12 @@ function init() {
   nextButtonNode.addEventListener("click", () => {
     setActiveSlideById(getNextId());
   });
+
+  // Add touchstart event listener
+  document.addEventListener("touchstart", touchStartHandler);
+  // Add touchend event listener
+  document.addEventListener("touchend", touchEndHandler);
+
   updateSlideCounter();
 
   timerProgressInterval = setInterval(() => {
@@ -38,6 +45,26 @@ function init() {
     updateSliderProgress();
   }, 50);
 }
+
+// Touchstart event handler
+function touchStartHandler(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+// Touchend event handler
+function touchEndHandler(event) {
+  const touchEndX = event.changedTouches[0].clientX;
+  const deltaX = touchEndX - touchStartX;
+
+  if (deltaX > 0) {
+    // Swipe right, go to previous slide
+    setActiveSlideById(getPrevId());
+  } else if (deltaX < 0) {
+    // Swipe left, go to next slide
+    setActiveSlideById(getNextId());
+  }
+}
+
 function updateTimerProgress() {
   timerProgressElement.value += 1; // увеличиваем значение прогресса на 1
   if (timerProgressElement.value === 100) {
@@ -45,6 +72,7 @@ function updateTimerProgress() {
     resetTimerProgress();
   }
 }
+
 function resetTimerProgress() {
   clearInterval(timerProgressInterval);
   timerProgressElement.value = 0;

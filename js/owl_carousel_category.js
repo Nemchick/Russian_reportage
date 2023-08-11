@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".box_scroll_category_catalog").owlCarousel({
-    loop: false,
+    loop: true,
     nav: false,
     dots: false,
      // Отключение возможности прокрутки слайдера с помощью мыши
