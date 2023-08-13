@@ -19,6 +19,7 @@
   transform: rotate(50deg);
   right: -100%;
   top: 350px;
+  z-index: -1;
 }
 .box_film_info_Poster .animation_square_info_film {
   right: -25%;
