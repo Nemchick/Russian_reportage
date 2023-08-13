@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/owl.carousel.min.css" />
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css" />
+    <link rel="icon" href="resources/logo.svg" type="image/png" />
+    <link href="styles/bootstrap-grid.min.css" rel="stylesheet" />
+    <title>Каталог</title>
+  </head>
+  <body>
+    <div c id="header-placeholder"></div>
+
+    <div class="container">
+      <div class="box_title_Film_distribution"><h1 class="title_category">Кинопрокат</h1></div>
+      <div class="row container_Film_distribution">
+        <a href="" class="col-lg-5 col-12 Film_distribution_animation">
+             <div class="Film_distribution_animation_block">
+                <div class="img_vector_Film_distribution_animation"></div>
+             </div>
+             <div class="Film_distribution_animation_block_hover"></div>
+             <div class="box_text_Film_distribution">
+               <p class="Film_distribution_text">Прокатные планы</p>
+               <p class="Film_distribution_under_text">Даты выхода в прокат фильмов из нашего каталога</p>
+             </div>
+            </a>
+        <div class="col-lg-7 col-12 Film_distription">
+          
+            <a href="" class="col-12 box_Film_distribution Film_distribution_1 ">
+              <p class="Film_distribution_text">РЕТРОСПЕКТИВА ЛУЧШИХ КАРТИН К СТОЛЕТНЕМУ ЮБИЛЕЮ ИНГМАРА БЕРГМАНА</p>
+              <div class="box_Film_distribution_hover"></div>
+            </a>
+          
+          
+            <a href="" class="col-12 box_Film_distribution Film_distribution_2 ">
+              <p class="Film_distribution_text">БЕРГМАН. ОСЕННЯЯ КОЛЛЕКЦИЯ</p>
+              <div class="box_Film_distribution_hover"></div>
+            </a>
+          
+          
+            <a href="" class="col-12 box_Film_distribution Film_distribution_3 ">
+              <p class="Film_distribution_text">ФЕСТИВАЛЬ НОВОГО ИТАЛЬЯНСКОГО КИНО</p>
+              <div class="box_Film_distribution_hover"></div>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="container section_catalog_all_film">
+      <div class="filters_catalog_all_film">
+        <p class="rolling_plans_header">
+          Все <span style="color: var(--red-base, #d8251d)">фильмы</span>
+        </p>
+        
+        <div class="box_filters_catalog_all_film">
+          <div
+            id="filter_1"
+            class="box_filter_catalog"
+            onclick="togglePopup('popup1')"
+          >
+            <p class="text_filter_catalog">Жанр</p>
+            <img src="resources/Icons_down.svg" />
+            <div id="popup1" class="popup_filters popup">
+              <a href="/" class="text_filter_catalog">Все</a>
+              <a href="/" class="text_filter_catalog">Драма</a>
+              <a href="/" class="text_filter_catalog">Комедии</a>
+              <a href="/" class="text_filter_catalog">Мультфильмы</a>
+              <a href="/" class="text_filter_catalog">Ужасы</a>
+              <a href="/" class="text_filter_catalog">Фантастика</a>
+              <a href="/" class="text_filter_catalog">Триллеры</a>
+              <a href="/" class="text_filter_catalog">Документальные фильмы</a>
+            </div>
+          </div>
+
+          <div
+            id="filter_2"
+            class="box_filter_catalog"
+            onclick="togglePopup('popup2')"
+          >
+            <a class="text_filter_catalog">Страна производства</a>
+            <img src="resources/Icons_down.svg" />
+            <div id="popup2" class="popup_filters popup">
+              <a href="/" class="text_filter_catalog">Россия</a>
+              <a href="/" class="text_filter_catalog">США</a>
+              <a href="/" class="text_filter_catalog">Франция</a>
+            </div>
+          </div>
+          <div
+            id="filter_3"
+            class="box_filter_catalog"
+            onclick="togglePopup('popup3')"
+          >
+            <a class="text_filter_catalog">Год релиза</a>
+            <img src="resources/Icons_down.svg" />
+            <div id="popup3" class="popup_filters popup">
+              <a href="/" class="text_filter_catalog">2023</a>
+              <a href="/" class="text_filter_catalog">2022</a>
+              <a href="/" class="text_filter_catalog">2021</a>
+            </div>
+          </div>
+          <div
+            id="filter_4"
+            class="box_filter_catalog"
+            onclick="togglePopup('popup4')"
+          >
+            <a class="text_filter_catalog">Вид прав</a>
+            <img src="resources/Icons_down.svg" />
+            <div id="popup4" class="popup_filters popup">
+              <a href="/" class="text_filter_catalog">Вид прав 1</a>
+              <a href="/" class="text_filter_catalog">Вид прав 2</a>
+              <a href="/" class="text_filter_catalog">Вид прав 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="burger_catalog">
+          <div class="burger_catalog_btn"></div>
+          <div class="block_burger_catalog">
+            <div class="box_popap_burger_catalog">
+              
+                <img class="img_popap_burger_catalog_close" src="resources/cross.svg">
+              
+              <div class="box_nav_burger_catalog">
+                <div class="">
+                  <div class="box_btn_catalog_accordion" data-toggle="accordion" data-target="#genre_accordion">
+                    <a class="category_nav_burger_catalog">
+                      Жанр
+                    </a>
+                    <img src="resources/Icons_down.svg" />
+                  </div>
+                  <div id="genre_accordion" class="accordion-content">
+                    <p>жанр 1 </p>
+                    <p>жанр 1 </p>
+                    <p>жанр 1 </p>
+                    <p>жанр 1 </p>
+                    <p>жанр 1 </p>
+                    <p>жанр 1 </p>
+                  </div>
+                </div>
+                <div>
+                 <div class="box_btn_catalog_accordion" data-toggle="accordion" data-target="#country_accordion">
+                    <a class="category_nav_burger_catalog" >
+                      Страна производства
+                    </a>
+                    <img src="resources/Icons_down.svg" />
+                 </div>
+                  <div id="country_accordion" class="accordion-content">
+                    <p>жанр 2 </p>
+                    <p>жанр 2 </p>
+                    <p>жанр 2 </p>
+                    <p>жанр 2 </p>
+                    <p>жанр 2 </p>
+          
+                  </div>
+                </div>
+                <div>
+                  <div class="box_btn_catalog_accordion" data-toggle="accordion" data-target="#year_accordion">
+                    <a class="category_nav_burger_catalog">
+                      Год релиза
+                    </a>
+                    <img src="resources/Icons_down.svg" />
+                  </div>
+                  <div id="year_accordion" class="accordion-content">
+                    <p>жанр 3 </p>
+                    <p>жанр 3 </p>
+                    <p>жанр 3 </p>
+                    <p>жанр 3 </p>
+                    <p>жанр 3 </p>
+          
+                  </div>
+                </div>
+                <div>
+                  <div class="box_btn_catalog_accordion" data-toggle="accordion" data-target="#rights_accordion">
+                    <a class="category_nav_burger_catalog" >
+                      Вид прав
+                    </a>
+                    <img src="resources/Icons_down.svg" />
+                  </div>
+                  <div id="rights_accordion" class="accordion-content">
+                    <p>жанр 4 </p>
+                    <p>жанр 4 </p>
+                    <p>жанр 4 </p>
+                    <p>жанр 4 </p>
+                    <p>жанр 4 </p>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row box_catalog_catalog_all_film">
+        <div class="row box_rolling_plans">
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/ded.png"
+                alt="on the verge of death"
+              />
+              <p class="rolling_plans_movies_data">В кино с 15 июня</p>
+              <p class="rolling_plans_movies_name">На пороге смерти</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/pantafa.png"
+                alt="Pantapha - Eater of Souls"
+              />
+              <p class="rolling_plans_movies_data">В кино с 6 июля</p>
+              <p class="rolling_plans_movies_name">
+                Пантафа — пожирательница душ
+              </p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/bad_blood.png"
+                alt="Bad blood"
+              />
+              <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+              <p class="rolling_plans_movies_name">Дурная кровь</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/boy.png"
+                alt="Boy meets girl"
+              />
+              <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+              <p class="rolling_plans_movies_name">Парень встречает девушку</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover rolling_plans"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/burn.jpg"
+                alt="BURN ALL MY LETTERS"
+              />
+              <p class="rolling_plans_movies_data">В кино с 15 июня</p>
+              <p class="rolling_plans_movies_name">СОЖГИ ВСЕ МОИ ПИСЬМА</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover rolling_plans"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/kells.jpg"
+                alt="MYSTERY KELLS"
+              />
+              <p class="rolling_plans_movies_data">В кино с 6 июля</p>
+              <p class="rolling_plans_movies_name">ТАЙНА КЕЛЛС</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover rolling_plans"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/story.jpg"
+                alt="STORIES THAT SHOULD NOT BE TOLD"
+              />
+              <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+              <p class="rolling_plans_movies_name">
+                ИСТОРИИ, КОТОРЫЕ НЕЛЬЗЯ РАССКАЗЫВАТЬ
+              </p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover "></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/fairy.jpg"
+                alt="MY FAIRY PICK"
+              />
+              <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+              <p class="rolling_plans_movies_name">МОЯ ФЕЯ-ПРОКАЗНИЦА</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover "></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/ded.png"
+                alt="on the verge of death"
+              />
+              <p class="rolling_plans_movies_data">В кино с 15 июня</p>
+              <p class="rolling_plans_movies_name">На пороге смерти</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/pantafa.png"
+                alt="Pantapha - Eater of Souls"
+              />
+              <p class="rolling_plans_movies_data">В кино с 6 июля</p>
+              <p class="rolling_plans_movies_name">
+                Пантафа — пожирательница душ
+              </p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/bad_blood.png"
+                alt="Bad blood"
+              />
+              <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+              <p class="rolling_plans_movies_name">Дурная кровь</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover"></div>
+          </div>
+          <div class="col-lg-3 col-6 rolling_plans_movies rolling_plans">
+            <a href="">
+              <img
+                class="col-12 rolling_plans_movies_img"
+                src="resources/boy.png"
+                alt="Boy meets girl"
+              />
+              <p class="rolling_plans_movies_data">В кино с 20 июля</p>
+              <p class="rolling_plans_movies_name">Парень встречает девушку</p>
+            </a>
+            <div class="col-lg-10 col-7 rolling_plans_movies_hover rolling_plans"></div>
+          </div>
+      </div>
+      <div class="container_nav_catalog">
+        <div class="box_nav_catalog_linck">
+          <a class="nav_number_filter_catalog" href="">
+            <span style="color: var(--red-base, #d8251d)">1</span></a
+          >
+          <a class="nav_number_filter_catalog" href="">2 </a>
+          <a class="nav_number_filter_catalog" href="">3 </a>
+          <a class="nav_number_filter_catalog" href="">4 </a>
+          <a class="nav_number_filter_catalog" href=""
+            ><span style="color: var(--red-base, #767575)">...</span></a
+          >
+          <a class="nav_number_filter_catalog" href=""> 10</a>
+        </div>
+        <div class="box_nav_catalog_btn">
+          <div class="col-3 nav_catalog_btn"></div>
+          <div class="col-3 nav_catalog_btn cursor_pointer">
+            <a class="btn_nav_catalog">
+              <span style="color: var(--red-base, #767575)">Назад</span>
+            </a>
+          </div>
+          <div class="col-3 nav_catalog_btn cursor_pointer">
+            <a class="btn_nav_catalog"> Вперед </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 Film_distribution_reviews">
+          <div class="box_Film_distribution_review">
+            <p class="col-lg-3 col-10 Film_distribution_text">Рецензии на кинофильмы</p>
+            <p class="Film_distribution_reviews_text col-lg-6 col-12">Читайте лучшие рецензии на фильмы из нашего каталога. Узнайте мнение кинокритиков и профессиональных изданий </p>
+            
+              <a class="btn_Film_distribution_reviews btn_red" href=""> подробнее
+                <div class="hover_button_about_the_film"></div>
+              </a>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/accordion_catalog.js"></script>
+    <script src="js/popap_mobil_catalog.js"></script>
+    <script src="js/Film_distribution.js"></script>
+    
+    <script src="js/togglePopup.js"></script>
+    <script src="js/header_black.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

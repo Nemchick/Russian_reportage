@@ -1,0 +1,271 @@
+.container_Film_distribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 16px;
+}
+.box_text_Film_distribution {
+  margin-left: 32px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.box_title_Film_distribution {
+  margin-bottom: 48px;
+  margin-top: 140px;
+}
+.Film_distribution_animation {
+  position: relative;
+  height: 735px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.Film_distribution_animation_block {
+  width: 100%;
+  height: 98%;
+  position: absolute;
+  background: url("../resources/Film_distribution_animation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: -100%;
+  transform: rotate(27deg);
+  background-position: 50%;
+  overflow: hidden;
+  z-index: -2;
+  transition: transform 2s, left 2s;
+}
+.Film_distribution_animation_block_hover {
+  width: 100%;
+  height: 98%;
+  position: absolute;
+  background: url("../resources/Film_distribution_animation.png");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: 50%;
+  opacity: 0;
+  z-index: -3;
+}
+.Film_distribution_animation:hover .img_vector_Film_distribution_animation {
+  background: url("../resources/Film_distribution_Vector_animation_hover.png");
+  background-repeat: no-repeat;
+}
+
+.Film_distribution_animation:hover .Film_distribution_animation_block {
+  background: url("../resources/Film_distribution_animation_hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.Film_distribution_animation:hover .Film_distribution_animation_block_hover {
+  background: url("../resources/Film_distribution_animation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 1;
+  top: 12px;
+  left: 7px;
+}
+.Film_distribution_animation.show .Film_distribution_animation_block {
+  left: 0;
+  transform: rotate(0deg);
+}
+.img_vector_Film_distribution_animation {
+  top: 10px;
+  left: -1.6%;
+  z-index: -1;
+  flex-shrink: 0;
+
+  width: 443px;
+  height: 402px;
+  position: absolute;
+  background: url("../resources/Film_distribution_Vector_animation.png");
+  background-repeat: no-repeat;
+}
+.Film_distription {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.box_Film_distribution {
+  height: 224px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.box_Film_distribution:hover .box_Film_distribution_hover {
+  opacity: 1;
+}
+.box_Film_distribution_hover {
+  background: url("../resources/box_Film_distribution_hover.png");
+  width: 100%;
+  height: 212.5px;
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 22px;
+  left: 22px;
+  opacity: 0;
+}
+.Film_distribution_1 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 15.63%,
+      rgba(0, 0, 0, 0.67) 78.13%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url("../resources/Film_distription_img_1.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.Film_distribution_2 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 15.63%,
+      rgba(0, 0, 0, 0.67) 78.13%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url("../resources/Film_distription_img_2.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.Film_distribution_3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 15.63%,
+      rgba(0, 0, 0, 0.67) 78.13%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url("../resources/Film_distription_img_3.jpg"),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.Film_distribution_text {
+  color: var(--white, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.Film_distribution_under_text {
+  color: var(--white, #fff);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.Film_distribution_reviews {
+  background: url("../resources/Film_distribution_reviews.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 147px;
+  display: flex;
+  margin-bottom: 128px;
+}
+.Film_distribution_reviews_text {
+  color: var(--white, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box_Film_distribution_review{
+    width: 100%;
+    height: 100%;
+    padding: 40px 58px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_Film_distribution_reviews{
+    width: 139px;
+}
+@media (max-width: 1399px) {
+  .img_vector_Film_distribution_animation {
+    left: -7%;
+  }
+
+  .box_Film_distribution_hover {
+    left: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .container_Film_distribution {
+    flex-direction: column;
+  }
+  .Film_distribution_animation_block {
+    background-position: 50%;
+  }
+  .Film_distribution_animation_block_hover {
+    background-position: 50%;
+  }
+  .box_title_Film_distribution {
+    margin-bottom: 29px;
+    margin-top: 64px;
+  }
+  .box_Film_distribution:hover .box_Film_distribution_hover {
+    opacity: 0;
+  }
+  .Film_distribution_reviews{
+    height: 268px;
+  }
+  .Film_distribution_reviews{
+    background: url("../resources/Film_distribution_reviews_small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .box_Film_distribution_review{
+    flex-direction: column;
+    padding: 24px 24px 37px 24px;
+    
+  }
+  .btn_Film_distribution_reviews{
+    margin-top: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .Film_distribution_animation {
+    height: 545px;
+  }
+  .Film_distribution_text {
+    font-size: 16px;
+  }
+  .Film_distribution_under_text {
+    font-size: 12px;
+  }
+  .box_text_Film_distribution {
+    gap: 8px;
+  }
+  .box_Film_distribution {
+    height: 111px;
+    padding: 16px;
+  }
+  .box_Film_distribution {
+    gap: 16px;
+  }
+  .img_vector_Film_distribution_animation {
+    width: 326px;
+    height: 297px;
+    background: url("../resources/Film_distribution_Vector_animation_small.png");
+    background-repeat: no-repeat;
+  }
+  .Film_distribution_animation:hover .img_vector_Film_distribution_animation {
+    background: url("../resources/Film_distribution_Vector_animation_small.png");
+    background-repeat: no-repeat;
+  }
+  .Film_distribution_reviews_text{
+    font-size: 14px;
+  }
+}

@@ -13,13 +13,16 @@
   margin-bottom: 12px;
 }
 @media (max-width: 992px) {
-  .title_category {
-    font-size: 28px;
-    line-height: normal;
-  }
+  
   .Arrow_category_btn {
     width: 32px;
     height: 32px;
     margin-bottom: 8px;
   }
+}
+@media (max-width: 575px) {
+    .title_category {
+        font-size: 28px;
+        line-height: normal;
+      }
 }
