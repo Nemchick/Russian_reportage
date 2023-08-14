@@ -27,8 +27,8 @@
   object-position: 50%;
 }
 .box_img_news_pages {
-    margin-top: 16px;
-    margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -41,14 +41,107 @@
   line-height: normal;
   text-transform: uppercase;
 }
-.box_nominations_news_pages{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.box_nominations_news_pages {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.nominations_news_pages{
-    padding-left: 27px;
+.nominations_news_pages {
+  padding-left: 27px;
 }
-.table_margin{
-    margin-bottom: 5px;
+.table_margin {
+  margin-bottom: 5px;
+}
+.box_media_news_pages {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../resources/news_pages_2.jpg);
+  height: 541px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.news_pages_vidio_btn {
+  display: flex;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  border-radius: 100px;
+  background: var(--red-base, #d8251d);
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.news_pages_vidio_btn_hover {
+  position: absolute;
+  z-index: -1;
+  background-image: url(../resources/slide_vidio_btn_hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.news_pages_vidio_btn:hover {
+  background: var(--red-base, #971a14);
+}
+.news_pages_vidio_btn:hover .news_pages_vidio_btn_hover {
+  left: 2px;
+  top: 2px;
+}
+.link_news_pages_text{
+  color: var(--grey-50, #767575);
+
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.link_news_pages{
+  display: flex;
+  gap: 16px;
+  margin-top: 2px;
+  margin-bottom: 128px;
+}
+.text_news_pages_v2{
+  display: none;
+}
+@media (max-width: 991px) {
+  .text_news_pages_v1{
+    display: none;
+  }
+  .text_news_pages_v2{
+    display: block;
+  }
+  .link_news_pages{
+    margin-bottom: 0px;
+  }
+  .box_info_news_pages{
+    padding-top: 8px;
+    gap: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .title_info_news_pages{
+    font-size: 26px;
+  }
+  .title_nominations_news_pages{
+    font-size: 14px;
+  }
+  .img_news_pages, .box_media_news_pages{
+    height: 209px;
+  }
 }

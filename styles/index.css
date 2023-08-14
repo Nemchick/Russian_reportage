@@ -95,3 +95,7 @@
 .display_flex{
   display: flex;
 }
+.img_42px{
+  width: 42px;
+  height: 42px;
+}
