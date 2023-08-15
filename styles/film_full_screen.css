@@ -36,7 +36,7 @@
 }
 .box_text_film {
   display: flex;
-  gap: 80px;
+  gap: 30px;
 }
 .film_parameter {
   color: var(--white, #fff);

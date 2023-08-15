@@ -19,7 +19,7 @@
 @import "Rental_plans.css";
 @import "news_pages.css";
 @import "Plan_page.css";
-
+@import "Review_page.css";
 
 @font-face {
   font-family: "OpenSans";
@@ -98,4 +98,15 @@
 .img_42px{
   width: 42px;
   height: 42px;
+}
+.display_block_567px{
+  display: none;
+}
+@media (max-width: 575px) {
+  .display_none_567px{
+display: none;
+  }
+  .display_block_567px{
+    display: block;
+  }
 }

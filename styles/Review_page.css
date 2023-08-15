@@ -1,0 +1,171 @@
+.container_Review_page {
+  padding-top: 80px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.Review_page_movies {
+  height: 295px;
+  border-radius: 8px;
+
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+.Review_page_movies_1 {
+  background: url("../resources/hunting_film.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.age_Review_page {
+  color: var(--grey-50, #767575);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box_info_Review_page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.text_info_Review_page {
+  color: var(--black, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text_info_Review_page_data {
+  color: var(--black, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.title_info_Review_page {
+  color: var(--black, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.width_text_info_Review_page {
+  width: 255px;
+}
+.box_btn_info_Review_page {
+  margin-top: 37px;
+}
+.container_reviews_Review_page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.box_reviews_Review_page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.link_reviews_Review_page {
+  color: var(--red-base, #d8251d);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.animation_Review_page {
+  background: url(../resources/Review_page_animation_big.png);
+  width: 602px;
+  height: 576px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  position: absolute;
+  transition: transform 2s, right 2s;
+  transform: rotate(50deg);
+  right: -50%;
+  top: 170px;
+  z-index: -1;
+}
+.container_Review_page.show .animation_Review_page {
+  right: -10%;
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1199px) {
+  .container_Review_page.show .animation_Review_page {
+    right: -20%;
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 991px) {
+  .container_reviews_Review_page {
+    padding-bottom: 80px;
+  }
+  .animation_Review_page {
+    background: url(../resources/Review_page_animation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    transform: rotate(50deg);
+    width: 272px;
+    height: 350px;
+    top: 900px;
+  }
+  .container_Review_page.show .animation_Review_page {
+    right: 0%;
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 767px) {
+  .text_info_Review_page,
+  .text_info_Review_page_data {
+    font-size: 14px;
+  }
+  .width_text_info_Review_page {
+    width: 175px;
+  }
+  .Review_page_movies {
+    height: 208px;
+  }
+  .container_Review_page {
+    padding-top: 24px;
+    padding-bottom: 47px;
+  }
+  .box_btn_info_Review_page {
+    margin-top: 29px;
+  }
+  .container_text_film {
+    gap: 6px;
+  }
+  .Review_page_movies {
+    margin-top: 45px;
+  }
+  .link_reviews_Review_page {
+    font-size: 14px;
+  }
+  .animation_Review_page {
+    height: 200px;
+    
+    top: 735px;
+  }
+  .container_Review_page.show .animation_Review_page {
+    right: 0%;
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 575px) {
+  .animation_Review_page {
+    top: 680px;
+  }
+  
+}
