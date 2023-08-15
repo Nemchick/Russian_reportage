@@ -43,3 +43,8 @@ text-transform: uppercase;
         margin-top: 64px;
     }
 }
+@media (max-width: 575px) {
+  .btn_nav_catalog{
+    font-size: 20px;
+  }
+}
