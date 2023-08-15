@@ -20,6 +20,8 @@
 @import "news_pages.css";
 @import "Plan_page.css";
 @import "Review_page.css";
+@import "Search_result.css";
+
 
 @font-face {
   font-family: "OpenSans";
