@@ -1,0 +1,41 @@
+.container_Reviews {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 124px;
+}
+.container_all_Reviews {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 67px;
+  justify-content: space-between;
+}
+.box_Reviews {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 41%;
+}
+.margin-top_Reviews{
+    margin-top: 244px;
+}
+@media (max-width: 991px) {
+    .margin-top_Reviews{
+        margin-top: 120px;
+    }
+    .box_Reviews{
+        width: 48%;
+    }
+}
+
+@media (max-width: 575px) {
+    .margin-top_Reviews{
+        margin-top: 45px;
+    }
+    .container_Reviews{
+        padding-top: 24px;
+        padding-bottom: 80px;
+    }
+}
