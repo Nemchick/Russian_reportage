@@ -22,6 +22,7 @@
 @import "Review_page.css";
 @import "Search_result.css";
 @import "Contacts.css";
+@import "all_news.css";
 
 
 @font-face {
@@ -123,5 +124,10 @@ display: none;
   .display_block_567px{
     display: block;
   }
+  .line-height_31px{
+    font-size: 12px;
+    line-height: 23px;
+  }
+ 
   
 }
