@@ -1,0 +1,130 @@
+.container_Contacts {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  padding-top: 140px;
+  padding-bottom: 128px;
+}
+.text_number_Contacts {
+  color: var(--black, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box_number_Contacts {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.box_Contacts {
+  display: flex;
+  gap: 24px;
+}
+.map_Contacts {
+  height: 688px;
+  padding-bottom: 128px;
+  position: relative;
+}
+.container_employees_Contacts {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 128px;
+  flex-direction: column;
+}
+.section_employees_Contacts {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.box_all_employees_Contacts {
+  display: flex;
+  flex-direction: row;
+}
+
+.box_employees_Contacts {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.box_address_map_Contacts {
+  top: 70px;
+  left: 72px;
+  width: 416px;
+  height: 412px;
+  background: url(../resources/address_map_Contacts.png);
+  position: absolute;
+  z-index: 9999;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.address_map_Contacts {
+  color: var(--white, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 145.833% */
+  text-transform: uppercase;
+}
+.title_address_map_Contacts {
+  color: var(--grey-10, #d4d3d3);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.box_text_address_map_Contacts {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.btn_width_address_map_Contacts {
+  width: 197px;
+}
+@media (max-width: 991px) {
+  .map_Contacts {
+    height: 1200px;
+  }
+  .box_address_map_Contacts {
+    top: 550px;
+  }
+}
+@media (max-width: 575px) {
+    .box_address_map_Contacts{
+        width: 370px;
+        height: 367px; 
+        background-size: contain;
+    }
+    .map_Contacts{
+        height: 878px;
+        padding-bottom: 80px;
+    }
+    .box_address_map_Contacts {
+        top: 350px;
+        left: 0%;
+      }
+      .container_Contacts{
+        padding-top: 64px;
+        padding-bottom: 60px;
+        gap: 30px;
+      }
+      .container_employees_Contacts{
+        padding-bottom: 80px;
+      }
+      .text_number_Contacts{
+        font-size: 16px;
+      }
+      .section_employees_Contacts{
+        gap: 20px;
+      }
+      .address_map_Contacts{
+        font-size: 16px;
+        line-height: 24px
+      }
+      .title_address_map_Contacts{
+        font-size: 10px;
+      }
+}

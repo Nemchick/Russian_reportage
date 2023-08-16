@@ -21,6 +21,7 @@
 @import "Plan_page.css";
 @import "Review_page.css";
 @import "Search_result.css";
+@import "Contacts.css";
 
 
 @font-face {
@@ -104,6 +105,17 @@
 .display_block_567px{
   display: none;
 }
+.display_block_992px{
+  display: none;
+}
+@media (max-width: 991px) {
+  .display_none_992px{
+    display:none;
+  }
+  .display_block_992px{
+    display: flex;
+  }
+}
 @media (max-width: 575px) {
   .display_none_567px{
 display: none;
@@ -111,4 +123,5 @@ display: none;
   .display_block_567px{
     display: block;
   }
+  
 }
