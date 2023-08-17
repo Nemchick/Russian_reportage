@@ -13,11 +13,12 @@
 }
 .people_basic {
   position: absolute;
-
   height: 508px;
   top: 15%;
   left: 25%;
   z-index: 1;
+  object-fit: cover;
+  object-position: 50%;
 }
 .people_bottom {
   z-index: 2;
@@ -39,6 +40,8 @@
 }
 .people_img_small {
   height: 229px;
+  object-fit: cover;
+  object-position: 50%;
 }
 .people_text {
   color: var(--black, #000);
@@ -53,6 +56,20 @@
   position: absolute;
   top: 67%;
   right: 7%;
+  text-decoration: none;
+  height: 42px;
+  border-radius: 100px;
+  background: var(--red-base, #d8251d);
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  padding: 12px 25px 12px 25px;
+  z-index: 1;
 }
 .people_text_position {
   z-index: 1;
@@ -77,7 +94,113 @@
   color: #ffff;
   opacity: 0;
 }
-.img_animation_people{
+.img_animation_people {
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 1399px) {
+  .people_btn {
+    top: 72%;
+  }
+}
+@media (max-width: 1199px) {
+  .people_img_small {
+    height: 160px;
+  }
+  .people_basic {
+    height: 400px;
+    top: 20%;
+    
+  }
+  .people_bottom {
+    top: 60%;
+    left: 40%;
+  }
+  .people_left {
+    top: 40%;
+    left: 9%;
+  }
+  .people_right {
+    top: 13%;
+    right: 17%;
+  }
+  .people_btn {
+    top: 85%;
+  }
+}
+@media (max-width: 991px) {
+  
+  .people_img_small {
+    height: 140px;
+  }
+  .people_basic {
+    height: 300px;
+    top: 24%;
+    left: 20%;
+  }
+  .people_bottom {
+    top: 55%;
+    left: 45%;
+  }
+  .people_left {
+    top: 37%;
+    left: 0%;
+  }
+  .people_right {
+    top: 16%;
+    right: 0%;
+  }
+  .people_btn {
+    top: 85%;
+  }
+  .people_text_position{
+    top: 75%;
+  }
+  .people_btn{
+    top: 95%;
+    right: 73%;
+  }
+}
+
+@media (max-width: 767px) {
+  .people_text_position{
+    top: 73%;
+  }
+  .people_btn{
+    top: 93%;
+    right: 65%;
+  }
+}
+@media (max-width: 575px) {
+  .people_text{
+    font-size: 14px;
+  }
+  .people_img_small {
+    
+    height: 89px;
+  }
+  .people_basic {
+    height: 195px;
+    top: 20%;
+    left: 20%;
+  }
+  .people_bottom {
+    top: 43%;
+    left: 39%;
+  }
+  .people_left {
+    top: 30%;
+    left: 0%;
+  }
+  .people_right {
+    top: 14%;
+    right: 0%;
+  }
+  .people_btn {
+    top: 88%;
+    right: 55%;
+  }
+  .people_text_position{
+    top: 60%;
+  }
 }
