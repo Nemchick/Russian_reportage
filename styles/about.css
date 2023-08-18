@@ -79,6 +79,25 @@
   justify-content: center;
   cursor: pointer;
 }
+.news_about_btn:hover{
+  background: var(--red-30, #971A14);
+  border: 2px solid var(--red-base,  #971A14);
+}
+.news_about_btn:hover p{
+  color: #FFFFFF;
+}
+.news_about_btn:hover .hover_button_about_the_film{
+ top: 4px;
+ left: 4px;
+ transform: rotate(1deg);
+}
+.news_about_btn:hover .img_pgf{
+  content: url("../resources/Icons_pgf_fff.svg")
+ }
+ .news_about_btn:hover .img_xls{
+  content: url("../resources/Icons_pgf_fff.svg")
+ }
+
 .news_about_title {
   color: var(--black, #000);
   font-size: 40px;

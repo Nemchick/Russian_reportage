@@ -174,6 +174,7 @@
   height: 147px;
   display: flex;
   margin-bottom: 128px;
+  
 }
 .Film_distribution_reviews_text {
   color: var(--white, #fff);
@@ -182,15 +183,37 @@
   font-weight: 400;
   line-height: normal;
 }
-.box_Film_distribution_review{
-    width: 100%;
-    height: 100%;
-    padding: 40px 58px;
-    display: flex;
-    justify-content: space-between;
+.box_Film_distribution_review {
+  width: 100%;
+  height: 100%;
+  padding: 40px 58px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
 }
-.btn_Film_distribution_reviews{
-    width: 139px;
+.btn_Film_distribution_reviews {
+  width: fit-content;
+  position: relative;
+  text-decoration: none;
+  height: 42px;
+  border-radius: 100px;
+  background: var(--red-base, #d8251d);
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  padding: 12px 25px 12px 25px;
+}
+.btn_Film_distribution_reviews:hover {
+  background: var(--red-base, #971a14);
+}
+.btn_Film_distribution_reviews:hover .hover_button_about_the_film {
+  top: 2px;
+  left: 2px;
 }
 @media (max-width: 1399px) {
   .img_vector_Film_distribution_animation {
@@ -202,6 +225,14 @@
   }
 }
 @media (max-width: 991px) {
+  .Film_distribution_animation_block{
+    width: 95%;
+  }
+  .Film_distribution_animation.show .Film_distribution_animation_block {
+    left: 12px;
+    
+    transform: rotate(0deg);
+}
   .container_Film_distribution {
     flex-direction: column;
   }
@@ -218,26 +249,31 @@
   .box_Film_distribution:hover .box_Film_distribution_hover {
     opacity: 0;
   }
-  .Film_distribution_reviews{
-    height: 268px;
-  }
-  .Film_distribution_reviews{
+ 
+  .Film_distribution_reviews {
     background: url("../resources/Film_distribution_reviews_small.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 268px;
+   margin: 0 auto;
+   margin-bottom: 80px;
   }
-  .box_Film_distribution_review{
+  .box_Film_distribution_review {
     flex-direction: column;
     padding: 24px 24px 37px 24px;
-    
   }
-  .btn_Film_distribution_reviews{
+  .btn_Film_distribution_reviews {
     margin-top: 32px;
   }
+ 
 }
 @media (max-width: 575px) {
+  
   .Film_distribution_animation {
     height: 545px;
+  }
+  .Film_distribution_animation_block{
+    width: 94%;
   }
   .Film_distribution_text {
     font-size: 16px;
@@ -265,7 +301,8 @@
     background: url("../resources/Film_distribution_Vector_animation_small.png");
     background-repeat: no-repeat;
   }
-  .Film_distribution_reviews_text{
+  .Film_distribution_reviews_text {
     font-size: 14px;
   }
+  
 }

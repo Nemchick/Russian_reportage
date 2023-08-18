@@ -82,6 +82,9 @@
   height: 48px;
   margin-bottom: 4px;
 }
+.arrow_back_film:hover{
+  content: url("../resources/Arrow_left_red.svg");
+}
 .slide_vidio_v2 {
   width: 411px;
   height: 231px;

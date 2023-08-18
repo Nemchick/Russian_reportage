@@ -48,6 +48,9 @@
   background-color: #971A14;
   border: 2px solid var(--red-base,  #971A14);
 }
+.rolling_plans_btn:hover .img_arrow_right_btn{
+  content: url("../resources/Arrow_right_fff.png");
+}
 .rolling_plans_btn:hover .rolling_plans_btn_hover{
   opacity: 1;
   top: -2px;
@@ -100,6 +103,17 @@
   right: 6%;
   top: 0px;
 }
+.rolling_plans_movies_hover_v2{
+  position: absolute;
+  z-index: -1;
+  background-image: url("../resources/rolling_plans_hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 80%;
+  right: 6%;
+  top: 0px;
+}
 .rolling_plans_movies_hover_no_data{
   position: absolute;
   z-index: -1;
@@ -118,6 +132,10 @@
 .rolling_plans_movies:hover .rolling_plans_movies_hover{
   right: 2.5px;
   top: 4%;
+}
+.rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
+  right: -1px;
+  top: 7%;
 }
 .rolling_plans_movies:hover .rolling_plans_movies_hover_no_data{
   opacity: 1;
@@ -157,7 +175,7 @@
   align-items: center;
 }
 @media (max-width: 991px) {
-  .rolling_plans_movies_hover {
+  .rolling_plans_movies_hover,.rolling_plans_movies_hover_v2 {
     
     
     height: 80%;
@@ -168,9 +186,18 @@
     right: 5%;
     top: 4%;
   }
+  .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
+    right: 5%;
+    top: 7%;
+  }
+  
 }
 @media (max-width: 767px) {
   .rolling_plans_movies:hover .rolling_plans_movies_hover{
+    right: 0;
+    top: 4%;
+  }
+  .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
     right: 0;
     top: 4%;
   }
@@ -207,9 +234,18 @@
     right: 20%;
     top: 0px;
   }
+  .rolling_plans_movies_hover_v2 {
+    height: 70px;
+    right: 20px;
+    top: 0px;
+  }
   .rolling_plans_movies:hover .rolling_plans_movies_hover{
     right: 20px;
     top: 30px;
+  }
+  .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
+    right: 20px;
+    top: 50px;
   }
   .rolling_plans_movies:hover .rolling_plans_movies_hover_no_data{
     opacity: 1;
@@ -223,7 +259,16 @@
     right: 20%;
     top: 0px;
   }
+  .rolling_plans_movies_hover_v2 {
+    height: 70%;
+    right: 20%;
+    top: 0px;
+  }
   .rolling_plans_movies:hover .rolling_plans_movies_hover{
+    right: 5px;
+    top: 30px;
+  }
+  .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
     right: 5px;
     top: 30px;
   }
@@ -240,7 +285,16 @@
     right: 20%;
     top: 0px;
   }
+  .rolling_plans_movies_hover_v2 {
+    height: 70%;
+    right: 20%;
+    top: 0px;
+  }
   .rolling_plans_movies:hover .rolling_plans_movies_hover{
+    right: 5px;
+    top: 15px;
+  }
+  .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
     right: 5px;
     top: 15px;
   }

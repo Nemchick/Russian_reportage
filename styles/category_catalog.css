@@ -2,20 +2,24 @@
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  
+
   width: 100%;
   height: 150px;
 }
-.btn_nav_catalog{
+.btn_nav_catalog {
   color: var(--black, #000);
-text-align: right;
+  text-align: right;
 
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
+.btn_nav_catalog:hover{
+  color: #D8251D;
+}
+
 .name_categori_catalog {
   /* margin-left: 16px; */
   max-width: 95%;
@@ -29,22 +33,77 @@ text-transform: uppercase;
 .category_catalog {
   height: 134px;
 }
-.header_catalog{
-    margin-top: 140px;
+.header_catalog {
+  margin-top: 140px;
 }
-.box_news_about_title{
-    margin-bottom: 31px;
+.box_news_about_title {
+  margin-bottom: 31px;
+}
+.block_hover_catalog_left {
+  position: relative;
+}
+.block_hover_catalog_left:hover .hover_catalog_left {
+  opacity: 1;
+}
+.block_hover_catalog_left:hover .hover_catalog_right {
+  opacity: 1;
+}
+.hover_catalog_left {
+  opacity: 0;
+  top: 2px;
+  left: 4px;
+  width: 100%;
+  height: 100%;
+  background: url("../resources/hover_catalog_left.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.hover_catalog_right {
+  opacity: 0;
+  top: 4px;
+  left: 1px;
+  width: 100%;
+  height: 100%;
+  background: url("../resources/hover_catalog_right.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+  z-index: -1;
 }
 @media (max-width: 991px) {
-    .category_catalog {
-        height: 117px;
-      }
-      .header_catalog{
-        margin-top: 64px;
-    }
+  .hover_catalog_right {
+    width: 93%;
+    height: 95%;
+    top: 10px;
+    left: 13px;
+  }
+  .hover_catalog_left {
+    width: 95%;
+    height: 95%;
+    top: 5px;
+    left: 10px;
+  }
+  .category_catalog {
+    height: 117px;
+  }
+  .header_catalog {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 768px) {
+  .block_hover_catalog_left:hover .hover_catalog_left {
+    opacity: 0;
+  }
+  .block_hover_catalog_left:hover .hover_catalog_right {
+    opacity: 0;
+  }
 }
 @media (max-width: 575px) {
-  .btn_nav_catalog{
+  .btn_nav_catalog {
     font-size: 20px;
   }
 }

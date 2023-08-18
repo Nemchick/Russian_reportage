@@ -90,6 +90,7 @@
 }
 .film_slider {
   gap: 32px;
+  padding-bottom: 10px;
 }
 .box_carousel_film_info {
   max-height: 390px;
@@ -124,7 +125,26 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
 }
+.film_btn:hover{
+  background-color: #971A14;
+  border: 2px solid var(--red-base, #971A14);
+}
+.film_btn:hover p{
+  color: #fff;
+}
+.film_btn:hover .icon_pgf{
+  content: url("../resources/Icons_pgf_fff.svg");
+}
+
+.film_btn:hover .hover_button_about_the_film {
+  opacity: 1;
+  top: 3.5px;
+  left: 3px;
+  transform: rotate(1deg);
+}
+
 .film_btn_text {
   color: var(--red-base, #d8251d);
   font-size: 10px;
