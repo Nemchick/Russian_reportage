@@ -1,12 +1,10 @@
 .animation_info_film {
-  
   width: 100%;
   height: auto;
   overflow: hidden;
-  
 }
-.box_film_info_Poster{
-    position: relative;
+.box_film_info_Poster {
+  position: relative;
 }
 .animation_square_info_film {
   width: 822px;
@@ -42,6 +40,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 .box_text_film_info {
   display: flex;
   gap: 32px;
@@ -63,7 +62,6 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  
 }
 .container_film_info {
   display: flex;
@@ -73,19 +71,17 @@
   overflow: hidden;
 }
 .film_info_Poster {
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
- 
-    position: absolute;
-  
+
+  position: absolute;
+
   width: 526px;
   height: 751px;
   z-index: 2;
-  
 }
 .img_carousel_film_info {
-  
   border-radius: 8px;
   object-fit: cover;
 }
@@ -95,8 +91,8 @@
 .film_slider {
   gap: 32px;
 }
-.box_carousel_film_info{
-    max-height: 390px;
+.box_carousel_film_info {
+  max-height: 390px;
 }
 .box_carousel_film_info .owl-item {
   margin-right: 24px; /* Добавляем отступ между слайдами */
@@ -112,171 +108,170 @@
   display: flex;
   justify-content: space-between;
 }
-.box_film_info_link{
-    display: flex;
-    gap: 16px;
-    align-items: center;
+.box_film_info_link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 .film_btn {
-    width: 128px;
-    height: 28px;
-    border-radius: 100px;
-    border: 2px solid var(--red-base, #d8251d);
-    background-color: #ffff;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .film_btn_text {
-    color: var(--red-base, #d8251d);
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.20px;
-    text-transform: uppercase;
-  }
-  .rolling_plans_v2{
-    display: block;
-  }
-  @media (max-width: 1399px) {
-    .film_info_Poster{
-        width: 451px;
-        height: 644px;
-    }
-    .animation_square_info_film {
-        width: 822px;
-        height: 822px;
-        transform: rotate(50deg);
-        right: -150%;
-        top: 350px;
-      }
-      .box_film_info_Poster .animation_square_info_film {
-        right: -50%;
-        transform: rotate(93deg);
-      }
-
-  }
-  @media (max-width: 1199px) {
-    .box_carousel_film_info{
-        max-height: 282px;
-    }
-    .film_info_Poster{
-        width: 376px;
-        height: 539px;
-    }
-    .animation_square_info_film {
-        width: 822px;
-        height: 822px;
-        transform: rotate(50deg);
-        right: -150%;
-        top: 350px;
-      }
-      .box_film_info_Poster .animation_square_info_film {
-        right: -85%;
-        transform: rotate(93deg);
-      }
-  }
-  @media (max-width: 991px) {
-    .box_carousel_film_info{
-        max-height: 210px;
-    }
-    .container_film_info_link{
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-    .film_info_Poster{
-        width: 276px;
-        height: 394px;
-    }
-    .animation_square_info_film {
-        width: 822px;
-        height: 822px;
-        transform: rotate(50deg);
-        right: -200%;
-        top: 350px;
-      }
-      .box_film_info_Poster .animation_square_info_film {
-        right: -150%;
-        transform: rotate(93deg);
-      }
-      .rolling_plans_v2{
-        display: none;
-      }
-      .secton_film_info {
-        margin-top: 80px;
-      }
-      .container_film_info_text {
-       
-        gap: 40px;
-        
-      }
-  }
-  @media (max-width: 767px) {
-    .box_carousel_film_info{
-        max-height: 156px;
-    }
-    .box_film_info{
-        flex-direction: column;
-        gap: 80px;
-    }
-    .box_film_info_btn{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .film_info_Poster{
-        width: 516px;
-        height: 737px;
-    }
-    .box_film_info_Poster{
-        height: 737px;
-    }
-    .animation_square_info_film {
-        width: 822px;
-        height: 822px;
-        transform: rotate(50deg);
-        right: -200%;
-        top: 290px;
-      }
-      .box_film_info_Poster .animation_square_info_film {
-        right: -95%;
-        transform: rotate(90deg);
-      }
-  }
-  @media (max-width: 575px) {
-    .title_film_info{
-        font-size: 24px;
-    }
-    .film_info_Poster{
-      width: 370px;
-      height: 528px;
-  }
-  .box_film_info_Poster{
-    height: 528px;
+  width: 128px;
+  height: 28px;
+  border-radius: 100px;
+  border: 2px solid var(--red-base, #d8251d);
+  background-color: #ffff;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-    .text_film_info{
-        font-size: 14px;
-    }
-    .box_carousel_film_info{
-        max-height: 219px;
-    }
-    .img_carousel_film_info{
-        max-height: 219px;
-        object-fit: cover;
-    }
-    .animation_square_info_film {
-        width: 822px;
-        height: 822px;
-        transform: rotate(50deg);
-        right: -200%;
-        top: 115px;
-      }
-      .box_film_info_Poster .animation_square_info_film {
-        right: -153%;
-        transform: rotate(90deg);
-      }
-    
+.film_btn_text {
+  color: var(--red-base, #d8251d);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.rolling_plans_v2 {
+  display: block;
+}
+@media (max-width: 1399px) {
+  .film_info_Poster {
+    width: 451px;
+    height: 644px;
   }
+  .animation_square_info_film {
+    width: 822px;
+    height: 822px;
+    transform: rotate(50deg);
+    right: -150%;
+    top: 350px;
+  }
+  .box_film_info_Poster .animation_square_info_film {
+    right: -50%;
+    transform: rotate(93deg);
+  }
+}
+@media (max-width: 1199px) {
+  .box_carousel_film_info {
+    max-height: 282px;
+  }
+  .film_info_Poster {
+    width: 376px;
+    height: 539px;
+  }
+  .animation_square_info_film {
+    width: 822px;
+    height: 822px;
+    transform: rotate(50deg);
+    right: -150%;
+    top: 350px;
+  }
+  .box_film_info_Poster .animation_square_info_film {
+    right: -85%;
+    transform: rotate(93deg);
+  }
+}
+@media (max-width: 991px) {
+  .box_carousel_film_info {
+    max-height: 210px;
+  }
+  .container_film_info_link {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .film_info_Poster {
+    width: 276px;
+    height: 394px;
+  }
+  .animation_square_info_film {
+    width: 822px;
+    height: 822px;
+    transform: rotate(50deg);
+    right: -200%;
+    top: 350px;
+  }
+  .box_film_info_Poster .animation_square_info_film {
+    right: -150%;
+    transform: rotate(93deg);
+  }
+  .rolling_plans_v2 {
+    display: none;
+  }
+  .secton_film_info {
+    margin-top: 80px;
+  }
+  .container_film_info_text {
+    gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .box_carousel_film_info {
+    max-height: 156px;
+  }
+  .box_film_info {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .box_film_info_btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .film_info_Poster {
+    width: 516px;
+    height: 737px;
+  }
+  .box_film_info_Poster {
+    height: 737px;
+  }
+  .animation_square_info_film {
+    width: 822px;
+    height: 822px;
+    transform: rotate(50deg);
+    right: -200%;
+    top: 290px;
+  }
+  .box_film_info_Poster .animation_square_info_film {
+    right: -95%;
+    transform: rotate(90deg);
+  }
+}
+@media (max-width: 575px) {
+  .title_film_info {
+    font-size: 24px;
+  }
+  .box_carousel_film_info .owl-item {
+    margin-right: 5px; /* Добавляем отступ между слайдами */
+  }
+  .film_info_Poster {
+    width: 370px;
+    height: 528px;
+  }
+  .box_film_info_Poster {
+    height: 528px;
+  }
+  .text_film_info {
+    font-size: 14px;
+  }
+  .box_carousel_film_info {
+    max-height: 219px;
+  }
+  .img_carousel_film_info {
+    max-height: 219px;
+    object-fit: cover;
+  }
+  .animation_square_info_film {
+    width: 822px;
+    height: 822px;
+    transform: rotate(50deg);
+    right: -200%;
+    top: 115px;
+  }
+  .box_film_info_Poster .animation_square_info_film {
+    right: -153%;
+    transform: rotate(90deg);
+  }
+}

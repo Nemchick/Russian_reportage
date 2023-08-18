@@ -87,6 +87,10 @@
 .line-height_31px{
   line-height: 31px;
 }
+.small_news_all_news:hover .line-height_31px{
+  color: #d8251d;
+}
+
 @media (max-width: 1399px) {
   .box_all_news{
     gap: 16px;

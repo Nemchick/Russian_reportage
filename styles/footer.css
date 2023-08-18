@@ -234,6 +234,8 @@ z-index: 1;
   .footer_img_link {
     width: 20px;
     height: 20px;
+    background-position: 50%;
+    background-size: cover;
   }
   .footer_btn {
     width: 32px;
@@ -255,5 +257,10 @@ z-index: 1;
   }
   .footer_subtitle {
     font-size: 12px;
+  }
+}
+@media (max-width: 389px) {
+  .footer_img_bottom{
+    display: none;
   }
 }

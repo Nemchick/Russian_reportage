@@ -1,6 +1,7 @@
 .Full_Screen_film {
   width: 100%;
-  height: 100vh;
+  height: 115vh;
+  position: relative;
 }
 .film_1 {
   background: linear-gradient(
@@ -102,6 +103,7 @@
 
 @media (max-width: 991px) {
   .slide_vidio_v2 {
+   margin-left: 24px;
     height: 208px;
   }
   .slaider_conteiner {

@@ -38,6 +38,7 @@
   align-items: center; /* Добавлено свойство */
 }
 .search_input {
+  width: 80%;
   color: var(--grey-30, #a5a4a4);
   border: none;
   font-size: 20px;
