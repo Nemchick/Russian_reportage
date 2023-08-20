@@ -1,43 +1,55 @@
-var controller = new ScrollMagic.Controller();
+const imageBlockSection = document.querySelector(".image-block");
 
-var startpin = new ScrollMagic.Scene({
-  triggerElement: ".container_text",
-  duration: 10
-})
-.setPin(".container_text")
-.addTo(controller);
+if (imageBlockSection !== null) {
+  let controller = new ScrollMagic.Controller();
 
-var tl = new TimelineMax();
-tl.add(
-  TweenMax.to(".svg-container", 1, {scale: 10, transformOrigin: "50%, 50%", ease: Power2.easeInOut}).delay(1)
-);
-tl.add(
-  TweenMax.to(".svg-container", 1, {opacity: 0, ease: Power2.easeInOut})
-);
+  const topBarEl = imageBlockSection.querySelector(".bar-top");
+  const rightBarEl = imageBlockSection.querySelector(".bar-right");
+  const bottomBarEl = imageBlockSection.querySelector(".bar-bottom");
+  const leftBarEl = imageBlockSection.querySelector(".bar-left");
+  const innerEl = imageBlockSection.querySelector(".inner-content-wrap");
+  const imageEl = imageBlockSection.querySelector(".expand-image");
 
-var scene = new ScrollMagic.Scene({
-  triggerElement: ".container_text",
-  duration: 550,
-  offset: function() {
-    return -window.innerHeight * 2;
-  }
-})
-.setTween(tl)
-.addTo(controller);
+  innerEl.style.opacity = 1;
+  innerEl.style.transform = "translateY(0%)";
 
-// Следование блока за экраном
-scene.on("progress", function (e) {
-  var progress = e.progress;
-  var windowHeight = window.innerHeight;
-  var containerTextHeight = document.querySelector(".container_text").offsetHeight;
-  var offset = windowHeight - containerTextHeight;
-  var translateY = offset * progress;
-  document.querySelector(".container_text").style.transform = "translateY(" + translateY + "px)";
-});
+  let scene = new ScrollMagic.Scene({
+    triggerElement: imageBlockSection,
+    triggerHook: "onLeave",
+    duration: 1000,
+  })
+    .setPin(imageBlockSection)
+    .addTo(controller);
 
+  scene.on("progress", (event) => {
+    let pixelProgress = event.progress * 700;
 
+    if (pixelProgress <= 700) {
+      let barScale = 1 - pixelProgress / 700;
+      topBarEl.style.transform = "scaleY(" + barScale + ")";
+      rightBarEl.style.transform = "scaleX(" + barScale + ")";
+      bottomBarEl.style.transform = "scaleY(" + barScale + ")";
+      leftBarEl.style.transform = "scaleX(" + barScale + ")";
+    } else {
+      topBarEl.style.transform = "scaleY(0)";
+      rightBarEl.style.transform = "scaleX(0)";
+      bottomBarEl.style.transform = "scaleY(0)";
+      leftBarEl.style.transform = "scaleX(0)";
+    }
 
+    if (pixelProgress >= 400) {
+      let imageScale = 1 + (pixelProgress - 400) / 100;
+      imageEl.style.transform = "scale(" + imageScale + ")";
+      innerEl.style.transform = "translateY(0%)";
+    }
+    if (pixelProgress >= 600) {
+      let opacity = 0 - (pixelProgress - 600) / 100;
+      imageEl.style.opacity = opacity;
+    } else {
+      imageEl.style.opacity = 1;
+    }
+  });
 
-
-
-
+  // Добавляем класс с плавными переходами
+  imageBlockSection.classList.add("smooth-transition");
+}

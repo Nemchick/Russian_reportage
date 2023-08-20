@@ -98,6 +98,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container_text {
+  height: 100vh;
+  width: 100%;
+  height: 823px;
+  position: relative;
+	overflow: hidden;
+    
+}
 @media (max-width: 1399px) {
   .people_btn {
     top: 72%;
@@ -170,10 +178,16 @@
     top: 93%;
     right: 65%;
   }
+  .container_text {
+    height: 950px;
+  }
 }
 @media (max-width: 575px) {
   .people_text{
     font-size: 14px;
+  }
+  .container_text {
+    height: 619px;
   }
   .people_img_small {
     
