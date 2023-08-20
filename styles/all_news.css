@@ -72,10 +72,12 @@
   gap: 24px;
 }
 .box_text_small_news_all_news{
-
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.big_news_all_news:hover .news_articles_text{
+  color: #d8251d;
 }
 .img_small_news_all_news{
   height: 277px;

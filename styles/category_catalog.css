@@ -42,7 +42,6 @@
 
 .block_hover_catalog_left {
   position: relative;
-  
  display: flex;
 }
 .block_hover_catalog_left:hover .hover_catalog_left {
