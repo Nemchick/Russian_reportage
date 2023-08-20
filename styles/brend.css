@@ -9,6 +9,7 @@
     overflow: hidden;
     user-select: none;
     gap: 20px;
+    padding-bottom: 148px;
   }
   .items-wrap:before,
   .items-wrap:after {
@@ -95,6 +96,9 @@
       gap: 40px;
       margin-left: 20px;
     margin-right: 20px;
+    }
+    .items-wrap{
+      padding-bottom: 50px;
     }
   }
   
