@@ -319,7 +319,7 @@
     opacity: 0;
   }
   .section_news.show .left_news {
-    right: 0%;
+    right: 1%;
   }
   .right_news {
     width: 48%;
@@ -374,7 +374,7 @@
     height: 242px;
   }
   .section_news.show .left_news {
-    right: 0%;
+    right: 1%;
   }
   .small_left_news {
     top: 485px;
@@ -391,13 +391,13 @@
     top: 672px;
   }
   .section_news.show .right_news {
-    left: 0%; /* Расположение справа после анимации */
+    left: 1%; /* Расположение справа после анимации */
   }
   .section_news.show .small_right_news {
     left: 51%; /* Расположение слева после анимации */
   }
   .section_news.show .small_central_news {
-    left: 0%; /* Расположение слева после анимации */
+    left: 1%; /* Расположение слева после анимации */
   }
   .section_news.show .small_left_news {
     left: 51%; /* Расположение слева после анимации */

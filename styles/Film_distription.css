@@ -98,6 +98,9 @@
   align-items: flex-end;
   position: relative;
 }
+.box_Film_distribution:hover .Film_distribution_text{
+color: #D8251D;
+}
 .box_Film_distribution:hover .box_Film_distribution_hover {
   opacity: 1;
 }

@@ -6,25 +6,25 @@ $(document).ready(function () {
      // Отключение возможности прокрутки слайдера с помощью мыши
     responsive: {
       0: {
-        items: 1.25,
+        items: 1.5,
       },
       450: {
-        items: 1.85,
+        items: 2.2,
       },
       576: {
-        items: 1.8,
+        items: 2,
       },
       768: {
-        items: 2.4,
+        items: 2.6,
       },
       992: {
-        items: 3,
+        items: 3.2,
       },
       1200: {
-        items: 3.6,
+        items: 3.9,
       },
       1400: {
-        items: 4.2,
+        items: 4.4,
       }
     },
     smartSpeed: 500, // Задайте значение по вашему выбору

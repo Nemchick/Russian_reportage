@@ -141,6 +141,7 @@
 .header_btn:hover .hover_circle {
   top: 2px;
   left: 2px;
+  opacity: 1;
 }
 
 .hover_circle {
@@ -152,7 +153,8 @@
   height: 42px;
   top: 0;
   right: 0;
-  z-index: -1; /* Add this line to position hover_circle below header_btn */
+  z-index: -1;
+  opacity: 0; /* Add this line to position hover_circle below header_btn */
 }
 
 .search_header_btn {
