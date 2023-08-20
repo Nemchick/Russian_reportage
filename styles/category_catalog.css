@@ -39,8 +39,11 @@
 .box_news_about_title {
   margin-bottom: 31px;
 }
+
 .block_hover_catalog_left {
   position: relative;
+  
+ display: flex;
 }
 .block_hover_catalog_left:hover .hover_catalog_left {
   opacity: 1;
@@ -94,7 +97,7 @@
     margin-top: 64px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .block_hover_catalog_left:hover .hover_catalog_left {
     opacity: 0;
   }
