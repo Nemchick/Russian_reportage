@@ -37,6 +37,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 .img_24px {
   width: 24px;

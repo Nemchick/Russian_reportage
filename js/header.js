@@ -8,7 +8,7 @@ fetch("header.html")
     const burger = document.querySelector('.js-burger');
     const closeBurger = document.querySelector('.js_close_burger');
     const searchHeaderBtn = document.querySelector('.search_header_btn');
-    const searchField = document.querySelector('.search_field');
+    const searchField = document.querySelector('.container_search_field');
     const searchBtnClose = document.querySelector('.search_btn_close');
 
     burgerBtn.addEventListener('click', function() {
@@ -24,13 +24,13 @@ fetch("header.html")
     });
 
     searchHeaderBtn.addEventListener('click', function() {
-      searchField.classList.add('display_flex');
+      searchField.classList.add('burger_open');
     });
 
    
 
     searchBtnClose.addEventListener('click', function() {
-      searchField.classList.remove('display_flex');
+      searchField.classList.remove('burger_open');
     });
 
   });
