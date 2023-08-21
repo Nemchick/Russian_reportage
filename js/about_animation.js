@@ -22,6 +22,7 @@ ScrollTrigger.create({
         ease: "power2.out",
         
       });
+      
       gsap.to(".about_animation_logo_left", {
         bottom: `${56}%`,
         left: `${5}%`,

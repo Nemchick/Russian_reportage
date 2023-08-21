@@ -28,7 +28,7 @@
   background: url("../resources/logo_red.svg");
   background-repeat: no-repeat;
   background-position: 50%;
-  
+
   height: 78px;
   position: absolute;
   bottom: 56%;
@@ -50,7 +50,7 @@
 .about_animation_logo_right {
   background: url("../resources/logo_red.svg");
   background-repeat: no-repeat;
-  
+
   background-position: 50%;
   z-index: 2;
 
@@ -58,6 +58,18 @@
   position: absolute;
   bottom: 56%;
   right: 5%;
+}
+.about_animation_logo_center {
+  background: url("../resources/logo_red.svg");
+  background-repeat: no-repeat;
+
+  background-position: 50%;
+  z-index: 2;
+
+  height: 78px;
+  position: absolute;
+  right: 43.8%;
+  bottom: -13.1965%;
 }
 .textv1 {
   line-height: 38px;
@@ -91,7 +103,6 @@
   .span_text_about {
     line-height: 38px;
   }
-  
 }
 @media (max-width: 576px) {
   .title_about_animation {
