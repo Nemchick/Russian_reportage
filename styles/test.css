@@ -73,7 +73,7 @@
 }
 .animaton_people_logo{
   
-  
+  visibility: visible;
   z-index: 100;
   width: 100%;
   height: 100%;

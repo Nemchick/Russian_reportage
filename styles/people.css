@@ -52,7 +52,7 @@
   line-height: normal;
 }
 .people_btn {
-  z-index: 1;
+  
   position: absolute;
   top: 69%;
   right: 7%;
@@ -69,7 +69,15 @@
   letter-spacing: 0.24px;
   text-transform: uppercase;
   padding: 12px 25px 12px 25px;
-  z-index: 1;
+  cursor: pointer;
+  
+}
+.people_btn:hover{
+  background: var(--red-base, #971a14);
+}
+.people_btn:hover .hover_button_about_the_film{
+  top: 2px;
+  left: 2px;
 }
 .people_text_position {
   z-index: 1;
@@ -80,6 +88,7 @@
 .people_animation {
   position: relative;
   height: 100%;
+  z-index: 1;
 }
 
 .box_people_animation {

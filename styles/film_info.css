@@ -235,7 +235,7 @@
   .box_film_info {
     flex-direction: column;
     gap: 80px;
-  }.box_film_info_Poster
+  }
   .box_film_info_btn {
     flex-wrap: wrap;
     justify-content: center;

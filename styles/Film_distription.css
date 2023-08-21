@@ -265,9 +265,9 @@ color: #D8251D;
     flex-direction: column;
     padding: 24px 24px 37px 24px;
   }
-  .btn_Film_distribution_reviews {
+  /* .btn_Film_distribution_reviews {
     margin-top: 32px;
-  }
+  } */
  
 }
 @media (max-width: 575px) {

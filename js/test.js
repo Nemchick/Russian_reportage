@@ -9,6 +9,8 @@ if (imageBlockSection !== null) {
   const leftBarEl = imageBlockSection.querySelector(".bar-left");
   const innerEl = imageBlockSection.querySelector(".inner-content-wrap");
   const imageEl = imageBlockSection.querySelector(".expand-image");
+  const animationPeopleLogoEl = imageBlockSection.querySelector(".animaton_people_logo");
+  const barsEl = imageBlockSection.querySelector(".bars");
 
   innerEl.style.opacity = 1;
   innerEl.style.transform = "translateY(0%)";
@@ -45,8 +47,19 @@ if (imageBlockSection !== null) {
     if (pixelProgress >= 600) {
       let opacity = 0 - (pixelProgress - 600) / 100;
       imageEl.style.opacity = opacity;
+    
+      if (opacity <= 0) {
+        imageEl.style.visibility = "hidden";
+        animationPeopleLogoEl.style.visibility = "hidden";
+        barsEl.style.visibility = "hidden";
+      } else {
+        imageEl.style.visibility = "visible";
+        animationPeopleLogoEl.style.visibility = "visible";
+        barsEl.style.visibility = "visible";
+      }
     } else {
       imageEl.style.opacity = 1;
+      imageEl.style.visibility = "visible";
     }
   });
 
