@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $(".fancybox").fancybox({
-      buttons: ["close"],
-      infobar: false, // Скрыть информацию о количестве всех слайдов
+        buttons: ["close"],
+        infobar: false,
+        loop: true // Добавить параметр loop: true
     });
-  });
+});
