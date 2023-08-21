@@ -89,6 +89,8 @@ function setActiveSlideById(id) {
   const currentId = activeId;
   activeId = id;
 
+  slidesNodes[currentId].style.transform = "translateX(-100%)";
+  slidesNodes[activeId].style.transform = "translateX(0)";
   slidesNodes[currentId].classList.remove(ACTIVE_SLIDE_CLASSNAME);
   slidesNodes[activeId].classList.add(ACTIVE_SLIDE_CLASSNAME);
 
