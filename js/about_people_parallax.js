@@ -7,8 +7,8 @@ const screenWidth = window.innerWidth;
 let smallImgTop, bixImgTop;
 
 if (screenWidth > 1399) {
-  smallImgTop = "56%";
-  bixImgTop = "36%";
+  smallImgTop = "100%";
+  bixImgTop = "40%";
 } else if (screenWidth > 991) {
   smallImgTop = "82%";
   bixImgTop = "65%";
