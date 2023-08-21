@@ -6,19 +6,27 @@ const screenWidth = window.innerWidth;
 // Определяем значения top в зависимости от ширины экрана
 let smallImgTop, bixImgTop;
 
-if (screenWidth > 1399) {
-  smallImgTop = "100%";
+if (screenWidth > 1400) {
+  smallImgTop = "80%";
   bixImgTop = "40%";
-} else if (screenWidth > 991) {
-  smallImgTop = "82%";
-  bixImgTop = "65%";
-}else if (screenWidth > 575){
-    smallImgTop = "100%";
+} else if (screenWidth > 1200) {
+  smallImgTop = "80%";
+  bixImgTop = "40%";
+}else if (screenWidth > 992) {
+  smallImgTop = "100%";
+  bixImgTop = "55%";
+}else if (screenWidth > 768) {
+  smallImgTop = "120%";
   bixImgTop = "70%";
-}else{
-  smallImgTop = "78%";
-  bixImgTop = "73%";
 }
+else if (screenWidth > 390) {
+  smallImgTop = "90%";
+  bixImgTop = "60%";
+}else{
+  smallImgTop = "95%";
+  bixImgTop = "65%";
+}
+
 
 // Используем полученные значения top при анимации
 gsap.to(".small_img_parallax", {

@@ -36,15 +36,24 @@
     .small_img_parallax{
         height: 285px;
     }
+    .section_about_people_parallax_animation{
+      height: 600px;
+    }
 }
 @media (max-width: 1200px) {
     .small_img_parallax{
         height: 240px;
     }
+    .section_about_people_parallax_animation{
+      height: 550px;
+    }
 }
 @media (max-width: 991px) {
     .small_img_parallax{
         height: 180px;
+    }
+    .section_about_people_parallax_animation{
+      height: 500px;
     }
 }
 @media (max-width: 768px) {
@@ -52,7 +61,7 @@
         height: 135px;
     }
     .section_about_people_parallax_animation{
-        height: 500px;
+        height: 400px;
       }
 }
 @media (max-width: 576px) {
@@ -60,13 +69,13 @@
         height: 135px;
     }
     .bix_img_about_people_parallax{
-        left: 20.8%;
+        left: 12.5%;
     }
     .left_img_about_people_parallax {
-        left: -17.5%;
+        left: -24.5%;
       }
       .right_img_about_people_parallax {
-        right: -17.5%;
+        right: -24.5%;
       }
       .section_about_people_parallax_animation{
         height: 375px;
