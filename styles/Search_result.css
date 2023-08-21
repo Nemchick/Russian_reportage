@@ -89,6 +89,9 @@
   display: flex;
   gap: 24px;
 }
+.box_news_Search_result:hover .hover_red{
+  color: #d8251d;
+}
 .box_info_news_Search_result {
   display: flex;
   flex-direction: column;
