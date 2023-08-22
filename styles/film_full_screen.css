@@ -120,7 +120,11 @@
     gap: 20px;
   }
   .Full_Screen_film{
-    height: 100vh;
+    
+    height: fit-content;
+  }
+  .box_title_film{
+    padding-top: 109px;
   }
 }
 @media (max-width: 575px) {
