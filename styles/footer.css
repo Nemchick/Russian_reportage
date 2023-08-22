@@ -202,7 +202,7 @@ z-index: 1;
     height: 42px;
   }
   .footer_box_btn {
-    gap: 8px;
+    gap: 6px;
     padding: 5px;
   }
   .footer_box_address {
@@ -210,8 +210,8 @@ z-index: 1;
     gap: 16px;
   }
   .footer_box_btn_v2 {
-    gap: 8px;
-    padding: 5px;
+    gap: 4px;
+    padding: 4px;
   }
   .footer_box_contact_nav {
     flex-direction: column;
