@@ -9,7 +9,7 @@ function parallax() {
     $('.parallax').each(function() {
       var trig = this.parentNode,
         parallax = this.getAttribute('data-parallax'),
-        speed = -parallax * 10 + '%';
+        speed = -parallax * 20 + '%';
   
       new ScrollMagic.Scene({ triggerElement: trig })
         .setTween(this, { y: speed, ease: Linear.easeNone })
