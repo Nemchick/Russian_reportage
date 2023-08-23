@@ -12,6 +12,9 @@
 }
 .box_Reviews {
   position: relative;
+  overflow: hidden;
+ 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +40,7 @@
   .box_Reviews:hover .reviews_movies_hover{
     opacity: 1;
   }
+  
   @media (max-width: 1399px) {
     .reviews_movies_hover {
         height: 680px;  
