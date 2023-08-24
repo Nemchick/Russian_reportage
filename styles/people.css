@@ -126,6 +126,7 @@
   .people_img_small {
     height: 160px;
   }
+  
   .people_basic {
     height: 400px;
     top: 20%;
@@ -201,6 +202,9 @@
   }
   .container_text {
     height: 950px;
+  }
+  .people_animation{
+    height: 100%;
   }
 }
 @media (max-width: 575px) {
