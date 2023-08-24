@@ -157,7 +157,7 @@
   opacity: 0;
   height: 342px;
   top: 166px;
-
+  visibility: hidden;
   width: 48%;
 }
 .big_news_red_hover {
@@ -170,7 +170,8 @@
   opacity: 0;
   height: 342px;
   top: 166px;
-  width: 48%;
+  width: 48%;visibility: hidden;
+  
 }
 .small_news_fff_hover {
   position: absolute;
@@ -183,6 +184,7 @@
   height: 342px;
   top: 530px;
   width: 32%;
+  visibility: hidden;
 }
 .small_news_red_hover {
   position: absolute;
@@ -195,6 +197,7 @@
   height: 342px;
   top: 600px;
   width: 32%;
+  visibility: hidden;
 }
 .right_news {
   height: 350px;

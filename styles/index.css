@@ -39,6 +39,10 @@
 }
 .no-scroll {
   overflow: hidden;
+
+}
+.visibility_visible{
+  visibility: visible;
 }
 
 .img_24px {
