@@ -89,6 +89,7 @@
   position: relative;
   height: 100%;
   z-index: 1;
+  margin-top: 125px;
 }
 
 .box_people_animation {
@@ -186,6 +187,9 @@
 }
 
 @media (max-width: 767px) {
+  .people_animation{
+    margin-top: 0;
+  }
   .people_text_position{
     top: 73%;
   }

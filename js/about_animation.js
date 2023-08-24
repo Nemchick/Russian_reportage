@@ -45,14 +45,14 @@ ScrollTrigger.create({
         heightValue = progress * 100 + "%";
       }
       gsap.to(".about_animation_logo_left", {
-        bottom: `${-13.1965}%`,
+        bottom: `${0}%`,
         left: `${45.8}%`,
         ease: "power1.inOut",
         duration: 1, // Добавленная опция duration
       });
 
       gsap.to(".about_animation_logo_right", {
-        bottom: `${-13.1965}%`,
+        bottom: `${0}%`,
         right: `${45.8}%`,
         ease: "power1.inOut",
         duration: 1, // Добавленная опция duration
@@ -69,37 +69,37 @@ ScrollTrigger.create({
 });
 // if (containerWidth >= 1399) {
     //   gsap.to(".about_animation_logo_left", {
-    //     bottom: `${-13.1965}%`,
+    //     bottom: `${0}%`,
     //     left: `${45.633}%`,
     //     ease: "power1.out"
     //   });
 
     //   gsap.to(".about_animation_logo_right", {
-    //     bottom: `${-13.1965}%`,
+    //     bottom: `${0}%`,
     //     right: `${45.633}%`,
     //     ease: "power1.out"
     //   });
     // }else if (containerWidth >= 695){
     //   gsap.to(".about_animation_logo_left", {
-    //     bottom: `${-13.1965}%`,
+    //     bottom: `${0}%`,
     //     left: `${45.9}%`,
     //     ease: "power1.out"
     //   });
 
     //   gsap.to(".about_animation_logo_right", {
-    //     bottom: `${-13.1965}%`,
+    //     bottom: `${0}%`,
     //     right: `${45.9}%`,
     //     ease: "power1.out"
     //   });
     // }else{
     //   gsap.to(".about_animation_logo_left", {
-    //     bottom: `${-13.1965}%`,
+    //     bottom: `${0}%`,
     //     left: `${41.6}%`,
     //     ease: "power1.out"
     //   });
 
     //   gsap.to(".about_animation_logo_right", {
-    //     bottom: `${-13.1965}%`,
+    //     bottom: `${0}%`,
     //     right: `${41.6}%`,
     //     ease: "power1.out"
     //   });
