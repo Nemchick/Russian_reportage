@@ -22,13 +22,12 @@ window.addEventListener('scroll', function() {
       smallNewsWhiteHover.classList.add('visibility_visible');
       smallNewsWhiteHoverV2.classList.add('visibility_visible');
     }, 2000);
-  } else {
-    sectionNews.classList.remove('show');
-    newsAnimationSquare.style.transitionDuration = '2s'; // Вернуть стандартную скорость анимации
-    newsAnimationSquare.style.transitionDelay = '0s'; // Уберите задержку перед началом анимации
+  } 
+  // else {
+  //   sectionNews.classList.remove('show');
+  //   newsAnimationSquare.style.transitionDuration = '2s'; // Вернуть стандартную скорость анимации
+  //   newsAnimationSquare.style.transitionDelay = '0s'; // Уберите задержку перед началом анимации
     
-    // setTimeout(function() {
-    //   bigNewsHover.classList.add('visibility_visible');
-    // }, 2000); // Добавить класс .visibility_visible после 2 секунд
-  }
+    
+  // }
 });
