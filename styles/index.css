@@ -95,6 +95,7 @@
   border-radius: 100px;
   top: 0;
   right: 0;
+  transform: rotate(1deg);
 }
 .btn_red:hover .hover_button_about_the_film {
   top: 2px;
