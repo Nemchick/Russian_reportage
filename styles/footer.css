@@ -76,17 +76,17 @@ z-index: 1;
   z-index: -1;
   opacity: 0;
 }
-.footer_box_btn:hover .footer_hover{
+/* .footer_box_btn:hover .footer_hover{
   top: 1px;
   left: 1px;
   opacity: 1;
-}
-.footer_box_btn:hover .header_link{
+} */
+/* .footer_box_btn:hover .header_link{
   color: var(--red-base, #D8251D);
 }
 .footer_box_btn:hover .img_tg{
   background: url("../resources/red_telegram.svg");
-}
+} */
 
 .footer_box_btn_v2 {
   z-index: 1;
@@ -183,6 +183,9 @@ z-index: 1;
 .footer_btn:hover .img_youtube{
   background: url("../resources/red_youtube.svg");
 }
+.footer_btn:hover .img_tg{
+  background: url("../resources/red_telegram.svg");
+}
 .gap_footer {
   display: flex;
   gap: 18px;
@@ -202,7 +205,7 @@ z-index: 1;
     height: 42px;
   }
   .footer_box_btn {
-    gap: 6px;
+    gap: 8px;
     padding: 5px;
   }
   .footer_box_address {
@@ -240,6 +243,38 @@ z-index: 1;
   .footer_btn {
     width: 32px;
     height: 32px;
+  }
+  .footer_hover{
+    width: 32px;
+    height: 32px;
+  }
+  .footer_btn:hover .img_vk{
+    background: url("../resources/red_vk.svg");
+    width: 20px;
+    height: 20px;
+    background-position: 50%;
+    background-size: cover;
+  }
+  .footer_btn:hover .img_ok{
+    background: url("../resources/red_ok-ru.svg");
+    width: 20px;
+    height: 20px;
+    background-position: 50%;
+    background-size: cover;
+  }
+  .footer_btn:hover .img_youtube{
+    background: url("../resources/red_youtube.svg");
+    width: 20px;
+    height: 20px;
+    background-position: 50%;
+    background-size: cover;
+  }
+  .footer_btn:hover .img_tg{
+    background: url("../resources/red_telegram.svg");
+    width: 20px;
+    height: 20px;
+    background-position: 50%;
+    background-size: cover;
   }
   .header_link {
     font-size: 10px;

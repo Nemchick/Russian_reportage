@@ -162,6 +162,9 @@
     right: 0%;
     transform: rotate(0deg);
   }
+  .age_Review_page{
+    font-size: 12px;
+  }
 }
 @media (max-width: 575px) {
   .animation_Review_page {
