@@ -137,6 +137,11 @@
 .film_btn:hover .icon_pgf{
   content: url("../resources/Icons_pgf_fff.svg");
 }
+.film_btn:hover .icon_xls{
+  content: url("../resources/Icons_xls_fff.svg");
+  width: 16px;
+  height: 16px;
+}
 
 .film_btn:hover .hover_button_about_the_film {
   opacity: 1;
