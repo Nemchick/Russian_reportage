@@ -90,7 +90,7 @@
 }
 .film_slider {
   gap: 32px;
-  padding-bottom: 10px;
+ 
 }
 .box_carousel_film_info {
   max-height: 390px;
@@ -207,6 +207,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+   padding-top: 30px;
   }
   .film_info_Poster {
     width: 276px;
@@ -243,7 +244,7 @@
   }
   .box_film_info_btn {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .film_info_Poster {
     width: 516px;
