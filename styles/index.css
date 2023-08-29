@@ -126,6 +126,9 @@
 .display_block_767px{
   display: none;
 }
+.color_red{
+  color: var(--red-base, #D8251D);
+}
 @media (max-width: 1199px) {
   .display_none_1200px{
     display:none;

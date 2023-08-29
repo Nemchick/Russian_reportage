@@ -134,8 +134,8 @@
   top: 4%;
 }
 .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
-  right: -1px;
-  top: 7%;
+  right: -4px;
+  top: 12%;
 }
 .rolling_plans_movies:hover .rolling_plans_movies_hover_no_data{
   opacity: 1;
@@ -188,7 +188,7 @@
   }
   .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
     right: 5%;
-    top: 7%;
+    top: 12%;
   }
   
 }
@@ -198,8 +198,8 @@
     top: 4%;
   }
   .rolling_plans_movies:hover .rolling_plans_movies_hover_v2{
-    right: 0;
-    top: 4%;
+    right: -4px;
+    top: 12%;
   }
 }
 @media (max-width: 576px) {
@@ -213,7 +213,7 @@
     font-size: 24px;
   }
   .section_rolling_plans {
-    padding: 80px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
   }
   .rolling_plans_movies_img {
     height: 257px;
@@ -238,6 +238,7 @@
     height: 70px;
     right: 20px;
     top: 0px;
+    display: none;
   }
   .rolling_plans_movies:hover .rolling_plans_movies_hover{
     right: 20px;

@@ -179,6 +179,10 @@ color: #D8251D;
   margin-bottom: 128px;
   
 }
+.margin_tickets{
+  margin-bottom: 0px;
+  margin-top: 125px;
+}
 .Film_distribution_reviews_text {
   color: var(--white, #fff);
   font-size: 18px;
@@ -260,6 +264,10 @@ color: #D8251D;
     height: 268px;
    margin: 0 auto;
    margin-bottom: 80px;
+  }
+  .margin_tickets{
+    margin-bottom: 0px;
+    margin-top: 60px;
   }
   .box_Film_distribution_review {
     flex-direction: column;
