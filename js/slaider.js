@@ -41,9 +41,7 @@ function init() {
     }
   }, 50);
 
-  setInterval(() => {
-    updateSliderProgress();
-  }, 50);
+
 }
 
 // Touchstart event handler
@@ -93,6 +91,8 @@ function setActiveSlideById(id) {
   slidesNodes[activeId].style.transform = "translateX(0)";
   slidesNodes[currentId].classList.remove(ACTIVE_SLIDE_CLASSNAME);
   slidesNodes[activeId].classList.add(ACTIVE_SLIDE_CLASSNAME);
+
+  resetTimerProgress(); // Сбросить таймер
 
   updateSlideCounter();
 }

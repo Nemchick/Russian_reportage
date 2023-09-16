@@ -8,14 +8,52 @@
     <link rel="icon" href="resources/logo.svg" type="image/png" />
     <link href="styles/bootstrap-grid.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-progressbar {
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        transition: width 0.5s linear;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 30px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
     <title>Рецензия Охота</title>
   </head>
   <body>
+    
+
     <!-- <section class="test">
       <div class="parallax p1" data-parallax="1">p1</div>
       <div class="parallax p2" data-parallax="0.5">p2</div>
     </section> -->
-    <div c id="header-placeholder"></div>
+    <!-- <div c id="header-placeholder"></div>
     <div class="container">
       <div class="row container_Reviews">
         <a href=""
@@ -78,7 +116,6 @@
     <script src="js/footer.js"></script>
     <script src="js/header_black.js"></script>
     
-    <script src="js/test_v2.js"></script>
-    
+    <script src="js/test_v2.js"></script> -->
   </body>
 </html>
